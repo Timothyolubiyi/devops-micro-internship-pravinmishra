@@ -13,11 +13,11 @@
 
 | | |
 |---|---|
-| **Name** | Your Name |
-| **LinkedIn** | [your-profile](https://linkedin.com) |
-| **Location** | City, Country |
-| **Background** | e.g. Software Developer / IT Admin / Student |
-| **Goal** | What you want to achieve through this program |
+| **Name** | Pravin Mishra |
+| **LinkedIn** | [pravin-mishra-aws-trainer](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) |
+| **Location** | Helsinki, Finland |
+| **Background** | Cloud, DevOps & AI Consultant |
+| **Goal** | Train 10,000+ DevOps professionals |
 
 ---
 
