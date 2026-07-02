@@ -13,11 +13,11 @@
 
 | | |
 |---|---|
-| **Name** | Pravin Mishra |
-| **LinkedIn** | [pravin-mishra-aws-trainer](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) |
-| **Location** | Helsinki, Finland |
-| **Background** | Cloud, DevOps & AI Consultant |
-| **Goal** | Train 10,000+ DevOps professionals |
+| **Name** | Timothy Olubiyi |
+| **LinkedIn** | [Timothy-Olubiyi-DevOps-Cloud-Security-Cybersecurity](https://www.linkedin.com/in/timothy-olubiyi-05b9ba123/) |
+| **Location** | Lagos, Nigeria |
+| **Background** | Cloud, DevOps, Cloud Security, Cybersecurity IT Projects, & Trainer |
+| **Goals** | To Be a Senior Cloud & DevSecOps Architect, and to train 10,000+ DevOps professionals |
 
 ---
 
