@@ -130,7 +130,7 @@ Week 04 → Git & GitHub
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-| 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/timothy-olubiyi-05b9ba123_homepage-activity-7408877918619090944-XybC?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB6VGscB2AplIT7PcrwZvA0ECup4mNaUoIw
+| 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/timothy-olubiyi-05b9ba123_homepage-activity-7408877918619090944-XybC?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB6VGscB2AplIT7PcrwZvA0ECup4mNaUoIw | https://medium.com/@timothyolubiyi/devops-learning-journey-tasks-1-5-f00aec167f2d
 | 01 | Success Mindset | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/timothy-olubiyi-05b9ba123_pravinmishra-devops-cloudcomputing-share-7478792094447382528-yDzR/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB6VGscB2AplIT7PcrwZvA0ECup4mNaUoIw | https://medium.com/@timothyolubiyi/the-making-of-a-cloud-devsecops-engineer-a-3-year-journey-c5e84230e8f3
 | 02 | Agentic AI with Claude Code | ✅ Completed| ✅ Solved | https://www.linkedin.com/posts/share-7481852621096468481-FU1i/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB6VGscB2AplIT7PcrwZvA0ECup4mNaUoIw | https://medium.com/@timothyolubiyi/reflection-week-2-104593d11eda
 | 03 | Linux for DevOps | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/activity-7484897311895150592-LbhJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB6VGscB2AplIT7PcrwZvA0ECup4mNaUoIw | https://medium.com/@timothyolubiyi/successfully-deployed-a-production-ready-static-website-on-ubuntu-with-nginx-77bd0df7fe84
