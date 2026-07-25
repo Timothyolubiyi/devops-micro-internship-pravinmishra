@@ -11,7 +11,7 @@ In Week 2 you built Claude Code hooks that block a dangerous action *before* it 
 You will build both halves of a real "PR Ready" workflow:
 
 1. A **Git hook that follows fixed rules** — scans staged changes for hardcoded secrets and oversized files and refuses the commit. No AI involved, no guessing, just a rule that gives the same answer every time.
-2. A **restricted Claude Code skill** (`/pr-ready`) that reads your staged diff and drafts a Pull Request title, description, and a short list of things worth a second look — the kind of judgment a fixed rule can't make (mixed changes, missing context, unclear intent). The skill never commits, pushes, or opens the PR. You do that yourself, using its draft as a starting point.
+2. A **restricted Claude Code skill** (`/pr-ready`) that reads your staged diff and drafts a Pull Request title, description, and a short list of things worth a second look — the kind of judgment a fixed rule can't make (mixed changes, missing context, unclear intent). The skill never commits, pushes, or opens the PR. You will do that yourself, using its draft as a starting point.
 
 This mirrors the Agentic Loop from Week 3's Linux triage assignment: **Gather → Analyze → Human Act → Verify**. The hook and the skill both gather and analyze; only you act.
 
@@ -67,7 +67,7 @@ The assignment uses an obviously fake AWS access key to safely simulate a real-w
 
 Create a tracked, shareable pre-commit hook that blocks a commit containing secret-like patterns or files over 1MB.
 
-### Evidence
+### Evidence.
 
 #### Screenshot 2 — `hooks/pre-commit` open in VS Code showing the full script
 
