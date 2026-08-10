@@ -20,7 +20,7 @@ Choose Team Mode or Solo Mode, and document how each Scrum role (Product Owner, 
 
 #### Screenshot 1 — Jira "Create project" screen, or the project sidebar after creation
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment4-ss1.jpg)
 
 ---
 
@@ -28,7 +28,10 @@ Add your screenshot here.
 
 Write one line for each role: PO (what you prioritized), SM (how you ensured process), Dev Lead (what you built), DevOps Lead (how you shipped).
 
-Write your answer here.
+PO: Prioritized the highest-value UI improvements that make the Gotto Job experience clearer and more user-friendly.
+SM: Ensured the Scrum process was followed by refining the backlog, estimating stories, planning Sprint 1, and tracking progress through the burndown.
+Dev Lead: Built and verified a small UI-only improvement involving text, color, spacing, a label, or CTA.
+DevOps Lead: Shipped the UI change through the deployment pipeline, verified the live increment, and documented the deployment outcome.
 
 ---
 
@@ -42,7 +45,7 @@ Create a Team-managed Scrum project named `Gotto Job – Team <#>` (Team Mode) o
 
 #### Screenshot 2 — Project created page showing the project name and key
 
-Add your screenshot here.
+![screenshot_2](screenshots/assignment4-ss1.jpg)
 
 ---
 
@@ -56,7 +59,7 @@ Create the Epic `Improve Gotto Job UI discoverability & trust` to group the UI i
 
 #### Screenshot 3 — Backlog showing the Epic panel with the Epic visible
 
-Add your screenshot here.
+![screenshot_3](screenshots/assignment4-ss3.jpg)
 
 ---
 
@@ -70,13 +73,13 @@ Create at least six Stories under the Epic, estimate each with 1, 2, or 3 story 
 
 #### Screenshot 4 — Backlog showing the Epic and at least six Stories under it
 
-Add your screenshot here.
+![screenshot_4](screenshots/assignment4-ss4.jpg)
 
 ---
 
 #### Screenshot 5 — One Story opened showing its Story Points and acceptance criteria filled in
 
-Add your screenshot here.
+![screenshot_5](screenshots/assignment4-ss4.1.jpg)
 
 ---
 
@@ -90,7 +93,7 @@ Confirm the Story Points (1, 2, or 3) for each Story and record brief reasoning 
 
 #### Screenshot 6 — Backlog showing Story Points visible, or two or three Stories opened showing their points
 
-Add your screenshot here.
+![screenshot_6](screenshots/assignment4-ss5.jpg)
 
 ---
 
@@ -98,7 +101,22 @@ Add your screenshot here.
 
 For each story, explain in one or two lines why it is a 1, 2, or 3 (mention any debate, even in Solo Mode).
 
-Write your answer here.
+
+Hero tagline clarity - (1pt) Very small change: replace/add one headline with minimal implementation and testing. In Solo Mode, there was little debate because the scope is straightforward.
+
+Primary CTA color - (1pt) A simple styling change affecting an existing button, with only hover and contrast verification required. The main debate was whether site-wide styling might increase the effort.
+
+Job card typography - (2pts) Requires identifying the correct job-card styles and adjusting typography while checking the Job Listing page across screen sizes. In Solo Mode, this was considered more than a one-line change because of visual verification.
+
+Remote badge (UI-only) - (2pts) Requires conditional UI logic to display the badge only on cards marked REMOTE, plus styling and testing. The debate was whether the existing card data already supported the REMOTE flag.
+
+Posted on <date> text - (1pt) Small UI addition, especially since static dates are acceptable, requiring minimal implementation and verification. In Solo Mode, there was little debate.
+
+Advanced search labels - (2pts)  Involves updating multiple form labels/placeholders and checking alignment and usability. The debate was whether the changes were purely text updates or required additional form-layout adjustments.
+
+Job detail Apply Now CTA - (1pt)  A small UI addition with a simple mailto: or # destination, followed by keyboard and click testing. The main debate was choosing the safest/simple link behavior.
+
+Footer trust links - (1pt) Requires adding two links and confirming their visibility, keyboard accessibility, and routing. In Solo Mode, the effort was judged low because the change is limited to the footer UI.
 
 ---
 
@@ -112,13 +130,13 @@ Create Sprint 1, move three or four Stories into it (approximately 3–6 points)
 
 #### Screenshot 7 — Sprint 1 with the selected Stories inside it
 
-Add your screenshot here.
+![screenshot_7](screenshots/assignment4-ss6.jpg)
 
 ---
 
 #### Screenshot 8 — One Story showing the Sub-tasks created
 
-Add your screenshot here.
+![screenshot_7](screenshots/assignment4-ss7.jpg)
 
 ---
 
@@ -132,7 +150,7 @@ Open the Burndown Chart and confirm it exists for Sprint 1. It is acceptable if 
 
 #### Screenshot 9 — Burndown Chart page opened, even if empty
 
-Add your screenshot here.
+![screenshot_8](screenshots/assignment4-ss8.jpg)
 
 ---
 
@@ -146,19 +164,18 @@ Implement one small UI-only Story from Sprint 1, commit it, deploy it live, and 
 
 #### Screenshot 10 — Jira board showing the Story moved to Done
 
-Add your screenshot here.
+![screenshot_8](screenshots/assignment4-ss9.jpg)
 
 ---
 
 #### Screenshot 11 — Git commit output
 
-Add your screenshot here.
-
+![screenshot_8](screenshots/assignment4-ss10.jpg)
 ---
 
 #### Screenshot 12 — Live URL in the browser showing the UI change, with the URL visible
 
-Add your screenshot here.
+![screenshot_8](screenshots/assignment4-ss11.jpg)
 
 ---
 
@@ -172,7 +189,7 @@ Add a retro comment covering what went well, what to improve, one Scrum pillar o
 
 #### Screenshot 13 — Jira retro comment visible
 
-Add your screenshot here.
+![screenshot_13](screenshots/assignment4-ss12.jpg)
 
 ---
 
@@ -188,13 +205,13 @@ Publish a LinkedIn post about what you delivered, including your live URL, three
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/timothy-olubiyi-05b9ba123_agile-scrum-jira-share-7492576124263223296-vhaw/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB6VGscB2AplIT7PcrwZvA0ECup4mNaUoIw
 
 ---
 
 #### Screenshot 14 — Published LinkedIn post
 
-Add your screenshot here.
+![screenshot_14](screenshots/assignment4-ss14.jpg)
 
 ---
 
@@ -208,18 +225,18 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Team Mode or Solo Mode selected and all four roles documented (Screenshot 1 & Notes)
-- [ ] Task 2: Team-managed Scrum project created with the required name (Screenshot 2)
-- [ ] Task 3: UI improvement Epic created (Screenshot 3)
-- [ ] Task 4: 6–8 Stories added under the Epic and ranked by value (Screenshots 4 & 5)
-- [ ] Task 5: Story Points set (1, 2, or 3) with reasoning recorded (Screenshot 6 & Notes)
-- [ ] Task 6: Sprint 1 created with Sprint Goal, 3–4 Stories, and Sub-tasks (Screenshots 7 & 8)
-- [ ] Task 7: Burndown Chart opened (Screenshot 9)
-- [ ] Task 8: One UI-only increment implemented, committed, deployed, and verified (Screenshots 10–12)
-- [ ] Task 9: Retro comment with one Scrum pillar and one Scrum value (Screenshot 13)
-- [ ] Task 10: Mandatory LinkedIn post published with the live URL, backlog refinement, Sprint planning, one shipped increment, proof, and Screenshot 14
-- [ ] Full Name visible in required screenshots
-- [ ] No sensitive data exposed
+- [✅] Task 1: Team Mode or Solo Mode selected and all four roles documented (Screenshot 1 & Notes)
+- [✅] Task 2: Team-managed Scrum project created with the required name (Screenshot 2)
+- [✅] Task 3: UI improvement Epic created (Screenshot 3)
+- [✅] Task 4: 6–8 Stories added under the Epic and ranked by value (Screenshots 4 & 5)
+- [✅] Task 5: Story Points set (1, 2, or 3) with reasoning recorded (Screenshot 6 & Notes)
+- [✅] Task 6: Sprint 1 created with Sprint Goal, 3–4 Stories, and Sub-tasks (Screenshots 7 & 8)
+- [✅] Task 7: Burndown Chart opened (Screenshot 9)
+- [✅] Task 8: One UI-only increment implemented, committed, deployed, and verified (Screenshots 10–12)
+- [✅] Task 9: Retro comment with one Scrum pillar and one Scrum value (Screenshot 13)
+- [✅] Task 10: Mandatory LinkedIn post published with the live URL, backlog refinement, Sprint planning, one shipped increment, proof, and Screenshot 14
+- [✅] Full Name visible in required screenshots
+- [✅] No sensitive data exposed
 
 ---
 
