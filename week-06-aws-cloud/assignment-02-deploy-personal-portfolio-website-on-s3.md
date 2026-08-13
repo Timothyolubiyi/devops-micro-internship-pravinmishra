@@ -20,7 +20,7 @@ Download or clone the portfolio website template from GitHub and confirm `index.
 
 #### Screenshot 1 — File Explorer or terminal showing the template folder contents with `index.html` visible
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment2-ss1.jpg)
 
 ---
 
@@ -34,7 +34,7 @@ Create a globally unique S3 bucket in your chosen AWS region.
 
 #### Screenshot 2 — S3 bucket created screen showing the bucket name and region
 
-Add your screenshot here.
+![screenshot_2](screenshots/assignment2-ss2.jpg)
 
 ---
 
@@ -48,7 +48,7 @@ Upload the contents of the template folder (not the folder itself) so `index.htm
 
 #### Screenshot 3 — S3 bucket Objects view showing `index.html` at the top or root level
 
-Add your screenshot here.
+![screenshot_3](screenshots/assignment2-ss3.jpg)
 
 ---
 
@@ -62,7 +62,7 @@ Enable S3 Static Website Hosting with `index.html` as the index document and `er
 
 #### Screenshot 4 — Static website hosting enabled screen showing the Website endpoint
 
-Add your screenshot here.
+![screenshot_4](screenshots/assignment2-ss4.jpg)
 
 ---
 
@@ -76,7 +76,7 @@ Adjust Block Public Access settings and save a bucket policy that grants public 
 
 #### Screenshot 5 — Bucket policy page showing the policy saved successfully, with the bucket name visible
 
-Add your screenshot here.
+![screenshot_5](screenshots/assignment2-ss5.jpg)
 
 ---
 
@@ -90,7 +90,7 @@ Load the site through the S3 website endpoint and confirm the homepage, images, 
 
 #### Screenshot 6 — Browser showing the live website with the S3 website endpoint visible in the address bar
 
-Add your screenshot here.
+![screenshot_6](screenshots/assignment2-ss6.jpg)
 
 ---
 
@@ -104,8 +104,9 @@ Edit a small visible detail, re-upload it to S3, and confirm the change appears 
 
 #### Screenshot 7 (optional) — Before and after views, or a browser view showing the updated text
 
-Add your screenshot here.
+![screenshot_7](screenshots/assignment2-ss7.jpg)
 
+![screenshot_7](screenshots/assignment2-ss8.jpg)
 ---
 
 # Submission Instructions
@@ -118,15 +119,15 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Template downloaded/cloned with `index.html` confirmed (Screenshot 1)
-- [ ] Task 2: Globally unique S3 bucket created (Screenshot 2)
-- [ ] Task 3: Website files uploaded with `index.html` at bucket root (Screenshot 3)
-- [ ] Task 4: Static website hosting enabled (Screenshot 4)
-- [ ] Task 5: Public-read bucket policy saved (Screenshot 5)
-- [ ] Task 6: Live website verified through the S3 website endpoint (Screenshot 6)
-- [ ] Task 7: Optional small update re-uploaded and verified (Screenshot 7)
-- [ ] S3 Website Endpoint URL included
-- [ ] No sensitive account information exposed
+- [✅] Task 1: Template downloaded/cloned with `index.html` confirmed (Screenshot 1)
+- [✅] Task 2: Globally unique S3 bucket created (Screenshot 2)
+- [✅] Task 3: Website files uploaded with `index.html` at bucket root (Screenshot 3)
+- [✅] Task 4: Static website hosting enabled (Screenshot 4)
+- [✅] Task 5: Public-read bucket policy saved (Screenshot 5)
+- [✅] Task 6: Live website verified through the S3 website endpoint (Screenshot 6)
+- [✅] Task 7: Optional small update re-uploaded and verified (Screenshot 7)
+- [✅] S3 Website Endpoint URL included
+- [✅] No sensitive account information exposed
 
 ---
 

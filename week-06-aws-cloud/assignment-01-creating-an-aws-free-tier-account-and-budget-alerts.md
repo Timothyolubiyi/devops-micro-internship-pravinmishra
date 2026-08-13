@@ -30,7 +30,7 @@ In the Billing Dashboard, create a monthly Cost Budget with a name, amount, and 
 
 #### Screenshot 1 — AWS Budget setup page showing the budget name, budget amount, and alert thresholds
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment1-ss1.jpg)
 
 ---
 
@@ -40,7 +40,12 @@ Answer the following in your own words:
 
 **1. Why is it important to set up budget alerts when using an AWS account?**
 
-Write your answer here.
+Budget alerts matter mainly because AWS billing has a few properties that make surprise costs easy:
+
+- Pay-as-you-go, no built-in ceiling. Unlike a prepaid plan, AWS will keep charging you for whatever you provision — there's no default spending cap. A misconfigured service just keeps running (and billing) until someone notices.
+- Costs can spike from mistakes, not just legitimate use. A forgotten EC2 instance left running, an oversized resource, a recursive Lambda loop, an S3 bucket accidentally made public and hit with traffic, or a compromised account key used for crypto-mining — all of these can rack up hundreds or thousands of dollars before a person would normally check the console.
+- Billing has a lag. Costs don't show up instantly; the Billing Dashboard typically updates with some delay, so by the time you'd notice a problem by manually checking, you may already owe for it.
+- Complexity hides cost. With dozens of services, each billed differently (per-hour, per-request, per-GB, data transfer, etc.), it's easy to lose track of what's actually driving your bill, especially as an account or organization grows.
 
 ---
 
@@ -53,13 +58,13 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] AWS Free Tier account created and Basic Support Plan (Free) selected
-- [ ] Logged in to the AWS Management Console
-- [ ] Monthly Cost Budget created with name, amount, and start month
-- [ ] Budget alert thresholds and notification email configured
-- [ ] Screenshot captured showing budget name, amount, and thresholds (Screenshot 1)
-- [ ] Notes question answered
-- [ ] No sensitive billing or account information exposed
+- [✅] AWS Free Tier account created and Basic Support Plan (Free) selected
+- [✅] Logged in to the AWS Management Console
+- [✅] Monthly Cost Budget created with name, amount, and start month
+- [✅] Budget alert thresholds and notification email configured
+- [✅] Screenshot captured showing budget name, amount, and thresholds (Screenshot 1)
+- [✅] Notes question answered
+- [✅] No sensitive billing or account information exposed
 
 ---
 
