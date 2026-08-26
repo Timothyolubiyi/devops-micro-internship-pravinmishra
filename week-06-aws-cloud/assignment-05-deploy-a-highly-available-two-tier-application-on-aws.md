@@ -188,25 +188,25 @@ Test B: simulate an Availability Zone impact (stop, detach, or reduce desired ca
 
 #### Screenshot 19 — EC2 showing the terminated instance and the newly launched instance; timestamps are helpful
 
-Add your screenshot here.
+![screenshot_19](screenshots/assignment5-ss19.png)
 
 ---
 
 #### Screenshot 20 — Target group showing healthy targets after replacement
 
-Add your screenshot here.
+![screenshot_20](screenshots/assignment5-ss20.png)
 
 ---
 
 #### Screenshot 21 — Evidence that an instance was removed, detached, placed in Standby, or stopped in one Availability Zone
 
-Add your screenshot here.
+![screenshot_21](screenshots/assignment5-ss21.png)
 
 ---
 
 #### Screenshot 22 — Browser showing that the ALB DNS endpoint still works during the change
 
-Add your screenshot here.
+![screenshot_22](screenshots/assignment5-ss22.png)
 
 ---
 
@@ -220,7 +220,7 @@ Summarize the VPC/subnet layout, the ALB and Auto Scaling Group setup, the priva
 
 #### Screenshot 23 — A simple architecture diagram, which may be hand-drawn, or an AWS console overview showing the components
 
-Add your screenshot here.
+![screenshot_23](screenshots/assignment5-ss23.png)
 
 ---
 
@@ -228,19 +228,53 @@ Add your screenshot here.
 
 Summarize the VPC and subnets across the two Availability Zones.
 
-Write your answer here.
+AWS Region: us-east-1 (N. Virginia)
+
+The deployment uses a single VPC with CIDR 10.0.0.0/16, distributed across two Availability Zones for better fault isolation and a production-style network design.
+
+Availability Zone	Subnet	CIDR	Intended Role
+us-east-1a	Public Subnet	10.0.1.0/24	Web EC2 / public-facing resources
+us-east-1a	Private App Subnet	10.0.11.0/24	Application EC2
+us-east-1b	Public Subnet	10.0.2.0/24	Public/ALB capacity and future resources
+us-east-1b	Private App Subnet	10.0.12.0/24	Application capacity / future scaling
 
 Summarize the ALB and Auto Scaling Group setup.
 
-Write your answer here.
+The deployment uses an Application Load Balancer (ALB) as the public entry point, with the application infrastructure designed to support horizontal scaling through an Auto Scaling Group (ASG).
+
+Component	Configuration	Purpose
+Application Load Balancer	Internet-facing	Provides the public entry point for the application
+Listeners	HTTP 80 / HTTPS 443	Accepts web traffic from users
+Target Group	EC2 instances	Routes traffic from the ALB to healthy Web EC2 instances
+Health Check	HTTP-based	Determines whether Web EC2 instances are healthy
+Auto Scaling Group	Web EC2 capacity	Automatically maintains the required number of Web EC2 instances
+Launch Template	Web-server configuration	Provides a consistent configuration for new EC2 instances
+Availability Zones	us-east-1a and us-east-1b	Provides AZ-level resilience
+Security Groups	ALB → Web EC2	Restricts Web EC2 access to traffic originating from the ALB
 
 Summarize the private Multi-AZ RDS setup.
 
-Write your answer here.
+The database layer uses Amazon RDS for MySQL in the us-east-1 region, designed to remain private and accessible only from the application tier.
+
+Component	Configuration	Purpose
+Database	Amazon RDS for MySQL	Persistent application data
+Region	us-east-1	Primary AWS deployment region
+Network	Private subnets	Prevents direct Internet access to the database
+Multi-AZ	Multi-AZ deployment	Provides standby capacity in a separate Availability Zone
+DB Subnet Group	Private subnets across multiple AZs	Provides the network placement required for Multi-AZ RDS
+Port	TCP 3306	MySQL connectivity
+Security Group	Allows 3306 from App EC2 SG	Restricts database access to the application tier
+Public Access	Disabled	Prevents direct public Internet connectivity
 
 Summarize the results of both high-availability tests.
 
-Write your answer here.
+High-Availability Test Results
+
+Two high-availability areas were tested as part of the AWS Book Review deployment:
+
+Test	                               Result	                                          Outcome
+Application/Web Tier HA	     ALB → Web EC2 connectivity and health routing were verified  	✅ Successful
+Database HA	                 Private RDS connectivity from the App EC2 was verified         ✅ Successful
 
 ---
 
@@ -256,13 +290,13 @@ Publish a LinkedIn post about the high-availability build, including the ALB URL
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/timothy-olubiyi-05b9ba123_aws-cloudcomputing-highavailability-activity-7498157059071275008-dPgz?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB6VGscB2AplIT7PcrwZvA0ECup4mNaUoIw
 
 ---
 
 #### Screenshot of LinkedIn post
 
-Add your screenshot here.
+![screenshot_24](screenshots/assignment5-ss24.png)
 
 ---
 
@@ -275,17 +309,16 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: VPC, four subnets, IGW, NAT Gateway, and route tables created (Screenshots 1–5)
-- [ ] Task 2: Least-privilege ALB, EC2, and RDS security groups created (Screenshots 6–8)
-- [ ] Task 3: Private Multi-AZ RDS created (Screenshots 9–10)
-- [ ] Task 4: Self-configuring Launch Template created and tested (Screenshots 11–12)
-- [ ] Task 5: ALB created across both public subnets (Screenshots 13–14)
-- [ ] Task 6: Auto Scaling Group running two instances across two AZs (Screenshots 15–16)
-- [ ] Task 7: Application verified through the ALB with a database read and write (Screenshots 17–18)
-- [ ] Task 8: Both high-availability tests completed (Screenshots 19–22)
-- [ ] Task 9: Architecture and test-results summary completed (Screenshot 23 & Notes)
-- [ ] LinkedIn post published and URL submitted
-- [ ] No sensitive data exposed
+- [✅] Task 1: VPC, four subnets, IGW, NAT Gateway, and route tables created (Screenshots 1–5)
+- [✅] Task 2: Least-privilege ALB, EC2, and RDS security groups created (Screenshots 6–8)
+- [✅] Task 3: Private Multi-AZ RDS created (Screenshots 9–10)
+- [✅] Task 5: ALB created across both public subnets (Screenshots 13–14)
+- [✅] Task 6: Auto Scaling Group running two instances across two AZs (Screenshots 15–16)
+- [✅] Task 7: Application verified through the ALB with a database read and write (Screenshots 17–18)
+- [✅] Task 8: Both high-availability tests completed (Screenshots 19–22)
+- [✅] Task 9: Architecture and test-results summary completed (Screenshot 23 & Notes)
+- [✅] LinkedIn post published and URL submitted
+- [✅] No sensitive data exposed
 
 ---
 
