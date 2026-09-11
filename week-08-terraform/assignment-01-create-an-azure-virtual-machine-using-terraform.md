@@ -94,6 +94,10 @@ Review the Terraform execution plan and provision the Azure resources.
 
 ![screenshot_9](screenshots/assignment8-ss9.png)
 
+### Question
+
+VM Public IP Address: [Enter the public IP shown by terraform output]
+
 ---
 
 # Task 4 — Verify the Deployment
