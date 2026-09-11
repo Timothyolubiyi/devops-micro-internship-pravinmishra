@@ -20,13 +20,13 @@ Define a VPC (10.0.0.0/16) with a public subnet (10.0.1.0/24) and private subnet
 
 #### Screenshot 1 — Terraform configuration showing the VPC and both subnet CIDR ranges
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment04-ss1.png)
 
 ---
 
 #### Screenshot 2 — Terraform configuration showing the Internet Gateway, public route table, and both Security Groups
 
-Add your screenshot here.
+![screenshot_2](screenshots/assignment04-ss2.png)
 
 ---
 
@@ -40,19 +40,19 @@ Use Terraform to launch a t2.micro Ubuntu 22.04 EC2 instance in the public subne
 
 #### Screenshot 3 — Terraform apply output showing successful EC2 provisioning
 
-Add your screenshot here.
+![screenshot_3](screenshots/assignment04-ss3.png)
 
 ---
 
 #### Screenshot 4 — EC2 instance running in the AWS Console with the public IP and subnet visible
 
-Add your screenshot here.
+![screenshot_4](screenshots/assignment04-ss4.png)
 
 ---
 
 #### Screenshot 5 — Terminal showing successful SSH access and installed software
 
-Add your screenshot here.
+![screenshot_5](screenshots/assignment04-ss5.png)
 
 ---
 
@@ -66,13 +66,13 @@ Deploy the EpicBook frontend and backend on the EC2 instance and configure Nginx
 
 #### Screenshot 6 — Terminal showing the EpicBook application files and dependency installation
 
-Add your screenshot here.
+![screenshot_6](screenshots/assignment04-ss6.png)
 
 ---
 
 #### Screenshot 7 — Terminal showing the application and Nginx services running
 
-Add your screenshot here.
+![screenshot_7](screenshots/assignment04-ss7.png)
 
 ---
 
@@ -86,19 +86,19 @@ Provision a private Amazon RDS MySQL instance (db.t3.micro, Publicly accessible:
 
 #### Screenshot 8 — Terraform apply output showing successful RDS provisioning
 
-Add your screenshot here.
+![screenshot_8](screenshots/assignment04-ss8.png)
 
 ---
 
 #### Screenshot 9 — RDS instance in the AWS Console showing the private network configuration and Publicly accessible: No
 
-Add your screenshot here.
+![screenshot_9](screenshots/assignment04-ss9.png)
 
 ---
 
 #### Screenshot 10 — Terminal showing successful database initialization or table verification from EC2
 
-Add your screenshot here.
+![screenshot_10](screenshots/assignment04-ss10.png)
 
 ---
 
@@ -112,13 +112,13 @@ Confirm EpicBook is accessible through the EC2 public IP and that navigation, ca
 
 #### Screenshot 11 — Browser showing the EpicBook application through the EC2 public IP
 
-Add your screenshot here.
+![screenshot_11](screenshots/assignment04-ss11.png)
 
 ---
 
 #### Screenshot 12 — Browser showing a working product, cart, order summary, or checkout flow
 
-Add your screenshot here.
+![screenshot_12](screenshots/assignment04-ss12.png)
 
 ---
 
@@ -126,7 +126,9 @@ Add your screenshot here.
 
 Write a short note describing any issue you faced, how you fixed it, and what you learned.
 
-Write your answer here.
+During the deployment of the EpicBook application on an Amazon EC2 instance and the setup of Amazon RDS for MySQL using Terraform, I encountered a few infrastructure and configuration challenges. The main issues included Terraform state inconsistencies, SSH key path errors, security group configuration for EC2 and RDS connectivity, and application connectivity to the MySQL database. I resolved these by correcting the SSH public key path, updating Terraform configurations, verifying resource dependencies, configuring the EC2 and RDS security groups to allow the required traffic, and validating the database connection from the EC2 instance.
+
+This deployment taught me the importance of proper Terraform state management, using reusable Infrastructure as Code configurations, understanding AWS networking and security group rules, and troubleshooting cloud infrastructure step by step. It also reinforced how EC2, RDS, networking, and Terraform work together to deploy a secure and functional cloud application.
 
 ---
 
@@ -140,15 +142,15 @@ Publish a LinkedIn post about what you achieved in this assignment, with public 
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
+https://lnkd.in/p/e3URUjYT
 
-`Add your URL here`
+
 
 ---
 
 #### Screenshot 13 — Published LinkedIn post showing the text and at least one image or proof
 
-Add your screenshot here.
+![screenshot_13](screenshots/assignment04-ss13.png)
 
 ---
 
@@ -162,14 +164,14 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: VPC, subnets, IGW, and Security Groups created with Terraform (Screenshots 1–2)
-- [ ] Task 2: EC2 provisioned and required software installed (Screenshots 3–5)
-- [ ] Task 3: EpicBook deployed and Nginx serving the app (Screenshots 6–7)
-- [ ] Task 4: Private RDS MySQL created and database initialized (Screenshots 8–10)
-- [ ] Task 5: End-to-end functionality validated (Screenshots 11–12)
-- [ ] Issue/fix/learning note written (Notes)
-- [ ] LinkedIn post published and URL submitted (Screenshot 13)
-- [ ] No sensitive data exposed
+- [✅] Task 1: VPC, subnets, IGW, and Security Groups created with Terraform (Screenshots 1–2)
+- [✅] Task 2: EC2 provisioned and required software installed (Screenshots 3–5)
+- [✅] Task 3: EpicBook deployed and Nginx serving the app (Screenshots 6–7)
+- [✅] Task 4: Private RDS MySQL created and database initialized (Screenshots 8–10)
+- [✅] Task 5: End-to-end functionality validated (Screenshots 11–12)
+- [✅] Issue/fix/learning note written (Notes)
+- [✅] LinkedIn post published and URL submitted (Screenshot 13)
+- [✅] No sensitive data exposed
 
 ---
 
