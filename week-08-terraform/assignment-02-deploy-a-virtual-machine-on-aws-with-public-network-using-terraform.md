@@ -161,7 +161,7 @@ It helps learners build strong DevOps foundations with hands-on experience.
 =======
 # Assignment 2 — Create an AWS EC2 Virtual Machine Using Terraform
 
-Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
+Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 ---
 
