@@ -277,13 +277,13 @@ Validate the syntax of the multi-play Ansible playbook and run it to install Ngi
 
 #### Screenshot 12 — Final `PLAY RECAP` showing `failed=0` and `unreachable=0`
 
-Add your screenshot here.
+![screenshot_12](screenshots/assignment4-ss12.png)
 
 ---
 
 ### Notes
 
-Add your task notes here.
+
 
 ---
 
@@ -297,7 +297,7 @@ Confirm that the Mini Finance website is publicly accessible through the Azure V
 
 #### Screenshot 13 — Mini Finance website successfully loading in the browser, with the Azure VM’s public IP address visible in the address bar
 
-Add your screenshot here.
+![screenshot_13](screenshots/assignment4-ss13.png)
 
 ---
 
@@ -305,9 +305,9 @@ Add your screenshot here.
 
 Add your deployed website URL below:
 
-```text
-http://<PUBLIC_IP>
-```
+
+http://13.61188.211
+
 
 ---
 
@@ -321,7 +321,7 @@ Create a `README.md` file to document the Mini Finance infrastructure and deploy
 
 #### Screenshot 14 — Completed `README.md` displayed in the VS Code Markdown preview or terminal
 
-Add your screenshot here.
+![screenshot_14](screenshots/assignment4-ss14.png)
 
 ---
 
@@ -329,9 +329,147 @@ Add your screenshot here.
 
 Copy and paste the complete contents of your `README.md` file below:
 
-```markdown
-Add your README.md content here.
-```
+Mini Finance on Azure with Terraform and Ansible
+
+Deploys the Mini Finance static website to an Ubuntu 22.04 VM on Azure.
+
+Terraform provisions the cloud infrastructure.
+Ansible configures the server, deploys the site, and verifies it.
+
+Application repository: https://github.com/pravinmishraaws/mini-finance-project
+
+Architecture
+Internet
+   │  HTTP :80 (open)      SSH :22 (my public IP /32 only)
+   ▼
+pip-mini-finance (Standard, Static)
+   │
+nsg-mini-finance ── attached to ──► nic-mini-finance
+                                        │
+                              subnet-mini-finance (10.0.1.0/24)
+                                        │
+                              vnet-mini-finance (10.0.0.0/16)
+                                        │
+                              vm-mini-finance (Ubuntu 22.04, Nginx)
+
+The public IP is the handoff between the two tools: Terraform outputs it, and Ansible uses it in the inventory.
+
+Project structure
+mini-finance/
+├── .gitignore
+├── README.md
+├── terraform/
+│   ├── providers.tf      # AzureRM provider
+│   ├── main.tf           # Azure resources
+│   ├── variables.tf      # Input variables
+│   └── outputs.tf        # public_ip output
+└── ansible/
+    ├── inventory.ini     # Target host (web group)
+    └── site.yml          # Install, deploy, verify plays
+What Terraform creates
+Resource	Name
+Resource Group	rg-mini-finance
+Virtual Network	vnet-mini-finance (10.0.0.0/16)
+Subnet	subnet-mini-finance (10.0.1.0/24)
+Network Security Group	nsg-mini-finance
+NSG rule (SSH)	Allow-SSH, TCP 22, source: my public IP /32
+NSG rule (HTTP)	Allow-HTTP, TCP 80, source: 0.0.0.0/0
+Public IP	pip-mini-finance (Standard, Static)
+Network Interface	nic-mini-finance (ipconfig-mini-finance, dynamic private IP)
+NSG association	nsg-mini-finance → nic-mini-finance
+Virtual Machine	vm-mini-finance (computer name mini-finance, user azureuser)
+Output	public_ip
+
+The VM uses SSH public key authentication. Password authentication is disabled.
+
+What Ansible does
+
+site.yml contains three plays:
+
+Install and configure Nginx (hosts: web, become: true): updates the apt cache, installs nginx, git and rsync, and ensures Nginx is started and enabled at boot.
+Clone and deploy the website (hosts: web, become: true): clones the repository into /opt/mini-finance, syncs it to /var/www/html/ with ansible.posix.synchronize (excluding .git, run with delegate_to: "{{ inventory_hostname }}"), sets ownership to www-data:www-data, and reloads Nginx through a handler when files change.
+Verify the deployment (hosts: localhost, connection: local, no privilege escalation): sends an HTTP request to the VM's public IP with ansible.builtin.uri and asserts status == 200.
+Prerequisites
+An Azure subscription and the Azure CLI (az login)
+Terraform 1.3 or later
+Ansible and the ansible.posix collection
+An SSH key pair (default: ~/.ssh/id_ed25519 and ~/.ssh/id_ed25519.pub)
+bash
+ansible-galaxy collection install ansible.posix
+Usage
+1. Provision the infrastructure
+bash
+cd terraform
+
+Create terraform.tfvars (this file is not committed):
+
+hcl
+subscription_id   = "<your-subscription-id>"
+location          = "<azure-region>"
+vm_size           = "<vm-size-available-in-your-subscription>"
+my_public_ip_cidr = "<your-public-ip>/32"
+
+Find your values:
+
+bash
+az account show --query id -o tsv     # subscription ID
+curl -4 -s ifconfig.me                # your public IP (append /32)
+az vm list-skus --location <region> --size <vm-size> --resource-type virtualMachines -o table
+
+Apply:
+
+bash
+terraform init
+terraform fmt
+terraform validate
+terraform plan
+terraform apply
+terraform output public_ip
+2. Verify SSH access
+bash
+ssh azureuser@$(terraform output -raw public_ip)
+3. Configure and deploy with Ansible
+
+Put the public IP in ansible/inventory.ini. The host name must not be web, because that is the group name.
+
+ini
+[web]
+mini-finance ansible_host=<public_ip> ansible_user=azureuser ansible_ssh_private_key_file=~/.ssh/id_ed25519
+
+Run the playbook:
+
+bash
+cd ../ansible
+ansible web -i inventory.ini -m ping
+ansible-playbook -i inventory.ini site.yml --syntax-check
+ansible-playbook -i inventory.ini site.yml
+4. Verify in the browser
+
+Open http://<public_ip>. Play 3 also confirms the site returns HTTP 200.
+
+5. Clean up
+bash
+cd terraform
+terraform destroy
+Security notes
+SSH (port 22) is restricted to a single public IP (/32) and never open to 0.0.0.0/0. Terraform rejects any other value through a validation rule.
+HTTP (port 80) is open to the internet because the site is public.
+Password login is disabled, so only the SSH key can log in.
+.gitignore excludes state files, plan files, crash logs and private keys. Also keep terraform.tfvars out of version control, since it holds the subscription ID and your IP.
+Troubleshooting
+Symptom	Likely cause and fix
+ssh: connect to host ... port 22: Connection timed out	Your public IP changed and no longer matches the Allow-SSH rule. Compare curl -4 -s ifconfig.me with az network nsg rule show -g rg-mini-finance --nsg-name nsg-mini-finance --name Allow-SSH --query sourceAddressPrefix -o tsv, update my_public_ip_cidr, and run terraform apply.
+Permission denied (publickey)	The private key does not match the public key in Terraform. Use -i with the matching key and chmod 600 it.
+couldn't resolve module ansible.posix.synchronize	Run ansible-galaxy collection install ansible.posix.
+Found both group and host with same name: web	Rename the host in inventory.ini (for example mini-finance).
+Git clone task hangs or the SSH session drops	Test GitHub access from the VM (curl -4 -sI https://github.com, git ls-remote <repo>), force IPv4 if IPv6 stalls, and use a shallow clone (depth: 1) with async and retries.
+Default Nginx page still shows	Check that the site files are at the repository root (ls /opt/mini-finance) and adjust the src path if they are in a subfolder.
+Key lessons
+Terraform builds the infrastructure and Ansible configures it, and the public IP connects the two.
+Both tools describe a desired state, so reruns are safe.
+When SSH times out, check the NSG source IP first. Because the NSG is managed in Terraform, the fix is a one-line variable change.
+Troubleshoot bottom-up: network and NSG, then SSH, then Ansible, then the application.
+
 
 ---
 
@@ -341,7 +479,7 @@ Add your README.md content here.
 
 #### Screenshot 15 — Published LinkedIn post showing the text and at least one deployment screenshot
 
-Add your screenshot here.
+
 
 ---
 
@@ -349,7 +487,7 @@ Add your screenshot here.
 
 Paste your LinkedIn post URL here:
 
-
+https://lnkd.in/p/eXrXE-ZR
 
 ---
 
