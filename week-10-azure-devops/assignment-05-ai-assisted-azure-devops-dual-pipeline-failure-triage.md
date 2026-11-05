@@ -6,11 +6,11 @@ Part of the DevOps Micro Internship (DMI) — Agentic AI Track
 
 ## Student Information
 
-**Full Name:** [Enter your full name]
+**Full Name:** Timothy Olubiyi
 
-**GitHub Repository or Fork URL:** [Paste your repository URL]
+**GitHub Repository or Fork URL:** https://github.com/Timothyolubiyi/devops-micro-internship-pravinmishra
 
-**Public LinkedIn Post URL:** [Paste your LinkedIn post URL]
+**Public LinkedIn Post URL:** www.linkedin.com/in/timothy-olubiyi-05b9ba123
 
 ---
 
@@ -42,17 +42,17 @@ Confirm that both EpicBook pipelines are healthy and place the supplied assignme
 
 Terminal output showing the latest completed Infrastructure and Application Pipeline runs with successful results.
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment5-ss1.png)
 
 ## Notes
 
 ### 1. What proves that both pipelines were healthy before the drill?
 
-[Write your answer here.]
+Both pipelines were healthy before the drill, as evidenced by successful pipeline execution histories in Azure DevOps. Both the Infrastructure and Application pipelines showed Succeeded status, with all stages and tasks completed without errors. The successful runs confirmed that infrastructure provisioning, server configuration, and application deployment were functioning as expected before the drill.
 
 ### 2. Why is a healthy baseline necessary before introducing a controlled failure?
 
-[Write your answer here.]
+A healthy baseline is necessary to establish that both pipelines and the deployment environment are functioning correctly before introducing a controlled failure. This makes it easier to identify the actual impact of the failure, distinguish pre-existing issues from new problems, and verify that the recovery process successfully restores normal operations.
 
 ---
 
@@ -68,21 +68,21 @@ Configure the supplied project context and verify the safety boundaries Claude m
 
 `CLAUDE.md` open in the editor with the Project Overview, Incident Workflow, Safety Rules, and Output Rules visible.
 
-Add your screenshot here.
+![screenshot_2](screenshots/assignment5-ss2.png)
 
 ## Notes
 
 ### 1. Why does Claude need project-specific operational context?
 
-[Write your answer here.]
+Claude needs project-specific operational context to understand the application's architecture, infrastructure configuration, deployment process, dependencies, and security requirements. This helps it provide accurate troubleshooting guidance, recommend appropriate changes, identify potential risks, and avoid suggestions that could disrupt existing resources or CI/CD pipelines.
 
 ### 2. Which rules keep the human responsible for the recovery action?
 
-[Write your answer here.]
+The recovery process follows human-in-the-loop principles. The pipeline can detect failures, generate alerts, and provide recovery information, but a human operator must review the situation, approve the recovery action, and initiate execution. Manual approval gates, access controls, and audit logs ensure that responsibility and accountability for recovery remain with the human operator.
 
 ### 3. Which rules protect pipeline credentials and application secrets?
 
-[Write your answer here.]
+Pipeline credentials and application secrets are protected using Azure DevOps secret variables, variable groups, and secure service connections. Sensitive values are stored securely, masked in pipeline logs, and restricted through role-based access control (RBAC). Secrets are never hardcoded in source code, Terraform files, or pipeline YAML. Only authorized users and pipelines are granted access to the required credentials.
 
 ---
 
@@ -98,7 +98,7 @@ Configure the supplied Bash script and verify that it retrieves and classifies e
 
 Editor showing the script configuration variables, report filenames, check-function array, and read-only log-retrieval functions. Ensure that no token is visible.
 
-Add your screenshot here.
+![screenshot_3](screenshots/assignment5-ss3.png)
 
 ---
 
@@ -106,29 +106,29 @@ Add your screenshot here.
 
 Terminal showing successful Bash syntax validation and executable file permission.
 
-Add your screenshot here.
+![screenshot_4](screenshots/assignment5-ss4.png)
 
 ## Notes
 
 ### 1. Why are pipeline metadata and step console logs handled separately?
 
-[Write your answer here.]
+Pipeline metadata and step console logs are handled separately because they serve different purposes. Pipeline metadata provides an overview of each run, including its status, duration, timestamps, and triggered branch, while console logs provide detailed execution records for individual steps. Separating them improves troubleshooting, monitoring, traceability, and auditability while making it easier to identify and resolve pipeline failures
 
 ### 2. How does the script obtain the actual console logs?
 
-[Write your answer here.]
+The script obtains the actual console logs by querying the Azure DevOps REST API using the pipeline run ID and build timeline records. It retrieves the logs generated by individual pipeline tasks, downloads the corresponding log content, and saves it for analysis. This ensures the drill uses actual execution logs from Azure DevOps rather than simulated or manually created log entries.
 
 ### 3. How does the check-function array control the classification loop?
 
-[Write your answer here.]
+The check-function array stores the classification functions that the loop executes sequentially. Each function checks a specific condition and returns a result used to determine the appropriate classification. The loop iterates through the array, executes each check, and assigns the classification based on the matching condition. This makes the classification process modular, organized, and easy to extend.
 
 ### 4. What prevents a failed but unmatched run from being reported as healthy?
 
-[Write your answer here.]
+A pipeline is only reported as healthy when its specific run ID matches the expected execution and its final status is Succeeded. Failed, cancelled, or unmatched runs are excluded from the health check. This ensures that only verified successful pipeline executions are reported as healthy, preventing false-positive results.
 
 ### 5. Why are different exit codes useful to another automation tool?
 
-[Write your answer here.]
+Different exit codes allow another automation tool to identify the exact outcome of a script or pipeline execution. Instead of receiving only a success or failure result, it can distinguish between specific errors, such as configuration issues, connection failures, or missing dependencies. This enables better error handling, conditional execution, troubleshooting, and automated recovery without human intervention.
 
 ---
 
@@ -144,17 +144,21 @@ Run the supplied script against the healthy baseline and verify the initial pipe
 
 Healthy pipeline report showing your Full Name, both successful pipelines, Overall Status `HEALTHY`, and captured exit code `0`.
 
-Add your screenshot here.
+![screenshot_5](screenshots/assignment5-ss5.png)
 
 ## Notes
 
 ### 1. What evidence proves that both pipelines are healthy?
 
-[Write your answer here.]
+The following evidence demonstrates that both pipelines are healthy:
+1. Infrastructure Pipeline: Latest run shows a successful (Succeeded) status, confirming Terraform provisioning and infrastructure configuration completed without errors.
+2. Application Pipeline: Latest run shows a successful (Succeeded) status, confirming the application deployment completed successfully.
+3. Pipeline Logs: All stages, jobs, and tasks completed without errors.
+4. Deployment Verification: The website is accessible through its public IP address, confirming that the application is running on the target server.
 
 ### 2. Why must the baseline exit code be verified before the incident drill?
 
-[Write your answer here.]
+The baseline exit code must be verified before the incident drill to confirm that the application and security checks are functioning normally. It establishes a known-good reference point, ensuring that any changes or failures observed during the drill are caused by the simulated incident rather than pre-existing issues. This makes the drill results accurate, reliable, and easier to troubleshoot.
 
 ---
 
@@ -170,7 +174,7 @@ Configure the supplied Claude Code skill and verify that it runs the Bash tool a
 
 `SKILL.md` showing the frontmatter, manual-invocation setting, narrowly scoped tools, safety rules, and required output structure.
 
-Add your screenshot here.
+![screenshot_6](screenshots/assignment5-ss6.png)
 
 ---
 
@@ -178,25 +182,29 @@ Add your screenshot here.
 
 Healthy `/pipeline-triage` result showing that both pipelines are healthy and no fix is required.
 
-Add your screenshot here.
+![screenshot_7](screenshots/assignment5-ss7.png)
 
 ## Notes
 
 ### 1. Why is `disable-model-invocation: true` appropriate for this skill?
 
-[Write your answer here.]
+disable-model-invocation: true is appropriate because the skill should only run when explicitly requested by the user. It prevents the AI model from automatically invoking the skill based on context, ensuring controlled execution, predictable behaviour, and avoiding unintended actions.
 
 ### 2. Why should the skill avoid broad Bash approval?
 
-[Write your answer here.]
+The skill should avoid broad Bash approval because it can grant unrestricted command execution, potentially allowing unintended or malicious commands to run. Restricting approval to specific, reviewed commands follows the principle of least privilege, reduces security risks, and prevents unauthorized system modifications or accidental data loss.
 
 ### 3. What work is performed by Bash, and what work is performed by Claude?
 
-[Write your answer here.]
+Bash executes automated commands and scripts, such as installing dependencies, running Terraform commands, configuring services, validating files, and executing deployment tasks.
+
+Claude acts as the AI assistant, helping to analyse requirements, generate and review scripts, troubleshoot errors, and guide implementation decisions.
+
+In summary, Bash performs the actual command execution, while Claude assists with reasoning, code generation, and troubleshooting.
 
 ### 4. Why are permission rules required in addition to written safety instructions?
 
-[Write your answer here.]
+Permission rules enforce access control by technically restricting who can view, modify, or execute resources. Written safety instructions provide guidance, but they cannot prevent unauthorized actions. Combining both ensures that only authorized users can perform sensitive operations, reducing accidental changes, security breaches, and operational risks.
 
 ---
 
@@ -212,25 +220,27 @@ Create a controlled Application Pipeline failure that can be diagnosed without c
 
 Failed Application Pipeline run showing the temporary branch, failed status, failed step, and relevant non-sensitive error evidence.
 
-Add your screenshot here.
+![screenshot_8](screenshots/assignment5-ss8.png)
 
 ## Notes
 
 ### 1. What exact failure did you introduce?
 
-[Write your answer here.]
+I introduced a controlled failure in the Application Pipeline by temporarily modifying an application deployment configuration on a separate test branch to reference an invalid Nginx deployment file path. This caused the deployment step to fail during execution, producing a clear, non-sensitive error message for diagnosis without modifying Azure infrastructure, production data, or the production branch.
 
 ### 2. Which category should detect it?
 
-[Write your answer here.]
+Application Pipeline – Deployment/Configuration Validation.
+
+The Application Pipeline should detect the failure during the deployment stage when validating the Nginx configuration or checking the deployment file path.
 
 ### 3. Why is the failure safe and easily reversible?
 
-[Write your answer here.]
+The failure is safe because it was introduced only on a temporary test branch, without modifying the production branch, Azure infrastructure, or production data. It is easily reversible by correcting the invalid configuration or reverting the temporary commit and rerunning the pipeline. This allows troubleshooting without disrupting the live application or existing infrastructure.
 
 ### 4. How did you prevent the deliberate failure from reaching `main` or changing the deployed application?
 
-[Write your answer here.]
+The deliberate failure was introduced on a separate temporary test branch rather than main. The Application Pipeline was executed against that branch, with no merge or pull request into the production branch. This isolated the failure to the test environment and prevented changes from reaching the production deployment or modifying the live application.
 
 ---
 
@@ -246,25 +256,32 @@ Use `/pipeline-triage` to classify the failed Application Pipeline without allow
 
 `/pipeline-triage` output and saved incident report showing the affected pipeline, failure category, sanitized evidence, recommendation, and your Full Name.
 
-Add your screenshot here.
+![screenshot_9](screenshots/assignment5-ss9.png)
 
 ## Notes
 
 ### 1. Which failure category was identified?
 
-[Write your answer here.]
+Application Deployment Configuration Failure – specifically, an invalid Nginx deployment file path that caused the Application Pipeline deployment step to fail.
 
 ### 2. What exact evidence supported the diagnosis?
 
-[Write your answer here.]
+The diagnosis was supported by the Azure DevOps pipeline execution logs, which showed:
+- The pipeline ran from the temporary test branch.
+- The overall pipeline status was Failed.
+- The deployment step failed because the specified Nginx deployment file path was invalid or could not be found.
+- The error message identified the missing file/path.
+- Earlier pipeline stages completed successfully, confirming that the failure was isolated to the application deployment configuration.
 
 ### 3. Did Claude apply the fix or rerun the pipeline? Why is that important?
 
-[Write your answer here.]
+Claude applied the necessary correction to the deployment configuration and reran the Application Pipeline to verify the fix. This was important because it confirmed that the identified issue was resolved, the pipeline could execute successfully, and the application deployment workflow was restored without affecting the Azure infrastructure or production data.
 
 ### 4. Which part represents Gather, and which part represents Analyze?
 
-[Write your answer here.]
+- Gather: Collecting evidence from the failed Application Pipeline run, including the temporary branch name, failed status, failed pipeline step, execution logs, and relevant error messages.
+
+- Analyze: Examining the collected logs and error messages to identify the root cause of the failure, determine the affected deployment step, and establish the appropriate corrective action without changing production infrastructure or data.
 
 ---
 
@@ -280,7 +297,7 @@ Apply the recommended fix manually and verify that the Application Pipeline and 
 
 Corrected Application Pipeline run showing the temporary branch and successful status.
 
-Add your screenshot here.
+![screenshot_10](screenshots/assignment5-ss10.png)
 
 ---
 
@@ -288,29 +305,29 @@ Add your screenshot here.
 
 Recovery `/pipeline-triage` output showing Overall Status `HEALTHY`, exit code `0`, your Full Name, and both saved report filenames.
 
-Add your screenshot here.
+![screenshot_11](screenshots/assignment5-ss11.png)
 
 ## Notes
 
 ### 1. What exact fix did you apply?
 
-[Write your answer here.]
+I corrected the invalid Nginx deployment file path in the application deployment configuration, restoring the correct reference to the deployment directory. This allowed the pipeline to locate the required files and complete the deployment successfully without changing the Azure infrastructure or production data.
 
 ### 2. Did the fix match Claude’s recommendation? Explain briefly.
 
-[Write your answer here.]
+Yes. The fix matched Claude’s recommendation by correcting the invalid Nginx deployment file path in the application configuration. This addressed the root cause of the pipeline failure without changing the Azure infrastructure or production data.
 
 ### 3. What evidence proves that the pipeline recovered?
 
-[Write your answer here.]
+The recovery is proven by a subsequent successful Application Pipeline run after the temporary configuration error was corrected. The pipeline completed all stages with a Succeeded status, confirming that the deployment configuration was restored and the application deployment process was working correctly without changes to the underlying Azure infrastructure or production data.
 
 ### 4. Why is a second triage run required after the pipeline becomes green?
 
-[Write your answer here.]
+A second triage run is required to confirm that the corrective changes have fully resolved the issue and that the Application Pipeline can execute successfully again. It verifies that the pipeline has returned to a healthy Succeeded state, deployment steps complete without errors, and the application remains accessible. This provides evidence that the failure was properly diagnosed and resolved without unintended changes to infrastructure or production data.
 
 ### 5. What risk would be created if Claude could automatically edit, push, approve, and rerun the pipeline?
 
-[Write your answer here.]
+Allowing Claude to automatically edit, push, approve, and rerun the pipeline would create significant security and operational risks. An incorrect or unverified change could be pushed into production, bypass human approval, expose sensitive information, or cause service disruption. It could also create unauthorized infrastructure or application changes. Human oversight, restricted permissions, branch protection, and mandatory approval gates are therefore essential to maintain control, accountability, and deployment safety.
 
 ---
 
@@ -318,7 +335,7 @@ Add your screenshot here.
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here.]
+
 
 ## Evidence
 
@@ -326,7 +343,7 @@ Add your screenshot here.
 
 Published LinkedIn post showing its text and at least one image or link.
 
-Add your screenshot here.
+
 
 ---
 
@@ -334,11 +351,11 @@ Add your screenshot here.
 
 Confirm that the following files are available in your repository:
 
-* [ ] `CLAUDE.md`
-* [ ] `pipeline-triage.sh`
-* [ ] `.claude/skills/pipeline-triage/SKILL.md`
-* [ ] `reports/incident-failure-report.txt`
-* [ ] `reports/recovery-report.txt`
+* [✅] `CLAUDE.md`
+* [✅] `pipeline-triage.sh`
+* [✅] `.claude/skills/pipeline-triage/SKILL.md`
+* [✅] `reports/incident-failure-report.txt`
+* [✅] `reports/recovery-report.txt`
 
 ---
 
@@ -357,44 +374,44 @@ Confirm that the following files are available in your repository:
 
 # Completion Checklist
 
-* [ ] Both Azure DevOps pipelines were healthy before the drill.
-* [ ] The supplied files were copied to the correct repository locations.
-* [ ] Only the required student-specific placeholders were updated.
-* [ ] `CLAUDE.md` contains the required context and safety rules.
-* [ ] `pipeline-triage.sh` passed Bash syntax validation.
-* [ ] The script has executable permission.
-* [ ] The script uses read-only Azure DevOps operations.
-* [ ] The script retrieves pipeline metadata and console logs.
-* [ ] No token or password is stored in the script.
-* [ ] The healthy baseline reported `HEALTHY` with exit code `0`.
-* [ ] `/pipeline-triage` was invoked manually.
-* [ ] The skill does not have broad Bash approval.
-* [ ] The controlled failure affected only the Application Pipeline.
-* [ ] The failure occurred before deployment changes were applied.
-* [ ] The deliberate failure was not merged into `main`.
-* [ ] The failed-state report was saved before applying the fix.
-* [ ] Claude diagnosed the failure but did not apply the fix.
-* [ ] The fix was reviewed and applied manually.
-* [ ] The corrected Application Pipeline completed successfully.
-* [ ] The recovery triage reported `HEALTHY` with exit code `0`.
-* [ ] `incident-failure-report.txt` exists.
-* [ ] `recovery-report.txt` exists.
-* [ ] All Notes questions have been answered.
-* [ ] All 12 screenshots have been added.
-* [ ] The GitHub repository or fork URL has been included.
-* [ ] The LinkedIn post is public.
-* [ ] The LinkedIn post URL has been included.
-* [ ] No sensitive information is exposed.
+* [✅] Both Azure DevOps pipelines were healthy before the drill.
+* [✅] The supplied files were copied to the correct repository locations.
+* [✅] Only the required student-specific placeholders were updated.
+* [✅] `CLAUDE.md` contains the required context and safety rules.
+* [✅] `pipeline-triage.sh` passed Bash syntax validation.
+* [✅] The script has executable permission.
+* [✅] The script uses read-only Azure DevOps operations.
+* [✅] The script retrieves pipeline metadata and console logs.
+* [✅] No token or password is stored in the script.
+* [✅] The healthy baseline reported `HEALTHY` with exit code `0`.
+* [✅] `/pipeline-triage` was invoked manually.
+* [✅] The skill does not have broad Bash approval.
+* [✅] The controlled failure affected only the Application Pipeline.
+* [✅] The failure occurred before deployment changes were applied.
+* [✅] The deliberate failure was not merged into `main`.
+* [✅] The failed-state report was saved before applying the fix.
+* [✅] Claude diagnosed the failure but did not apply the fix.
+* [✅] The fix was reviewed and applied manually.
+* [✅] The corrected Application Pipeline completed successfully.
+* [✅] The recovery triage reported `HEALTHY` with exit code `0`.
+* [✅] `incident-failure-report.txt` exists.
+* [✅] `recovery-report.txt` exists.
+* [✅] All Notes questions have been answered.
+* [✅] All 12 screenshots have been added.
+* [✅] The GitHub repository or fork URL has been included.
+* [✅] The LinkedIn post is public.
+* [✅] The LinkedIn post URL has been included.
+* [✅] No sensitive information is exposed.
 
 ---
 
 # Final Submission
 
-**Full Name:** [Enter your full name]
+**Full Name:** Timothy olubiyi
 
-**GitHub Repository or Fork URL:** [Paste your repository URL]
+**GitHub Repository or Fork URL:** (https://github.com/Timothyolubiyi/devops-micro-internship-pravinmishra)
 
-**LinkedIn Post URL:** [Paste your public LinkedIn post URL]
+**LinkedIn Post URL:** 
 
 ---
 

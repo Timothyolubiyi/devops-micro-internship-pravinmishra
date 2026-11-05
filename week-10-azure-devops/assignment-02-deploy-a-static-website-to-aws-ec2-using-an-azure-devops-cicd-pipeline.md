@@ -36,7 +36,7 @@ Add a screenshot of Azure Repos showing:
 * Project files
 * `index.html`
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment2-ss1.png)
 
 ---
 
@@ -65,7 +65,7 @@ Add a screenshot of the saved SSH Service Connection **Overview** page showing:
 * Service Connection name
 * SSH connection type
 
-Add your screenshot here.
+![screenshot_2](screenshots/assignment2-ss2.png)
 
 > Do not expose a password, SSH private key, passphrase, or another credential.
 
@@ -91,7 +91,7 @@ Add a screenshot of `azure-pipelines.yml` open in the Azure Repos editor showing
 * `CopyFilesOverSSH@0` task
 * `SSH@0` verification task
 
-Add your screenshot here.
+![screenshot_3](screenshots/assignment2-ss3.png)
 
 > Ensure that no password, SSH private key, PAT, or AWS credential is visible.
 
@@ -115,7 +115,7 @@ Add a screenshot of the successful pipeline run and log summary showing:
 * Remote-verification step completed
 * Your Full Name visible in the pipeline output
 
-Add your screenshot here.
+![screenshot_4](screenshots/assignment2-ss4.png)
 
 ---
 
@@ -136,7 +136,7 @@ Add a browser screenshot showing:
 * Your Full Name
 * Updated website content after the automatic deployment
 
-Add your screenshot here.
+![screenshot_4](screenshots/assignment2-ss4.png)
 
 ## Final Website URL
 
@@ -144,7 +144,7 @@ Add your screenshot here.
 
 Replace the placeholder with your actual website URL:
 
-[Paste your final website URL here]
+[http://13.60.67.174]
 
 ---
 
@@ -152,7 +152,7 @@ Replace the placeholder with your actual website URL:
 
 Write a short summary of the completed CI/CD workflow.
 
-[Write your summary here.]
+Configured an end-to-end CI/CD workflow using Azure DevOps, Azure Repos, Terraform, Ansible, and SSH. The static website repository was imported from GitHub into Azure Repos, and a separate Ubuntu VM was provisioned using Terraform as the deployment target. The workflow automates the deployment process by triggering the Azure DevOps pipeline when changes are pushed to the main branch. Ansible handles the target server configuration, while SSH facilitates secure file transfer and deployment to the Nginx web server. The deployed website is served publicly over HTTP on port 80, enabling automated and repeatable website updates.
 
 ---
 
@@ -167,11 +167,11 @@ Add a screenshot of your LinkedIn post containing:
 * Three to five lines describing the CI/CD workflow
 * A screenshot of the successful pipeline or deployed website
 
-Add your screenshot here.
+
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here]
+
 
 > Do not expose AWS credentials, SSH private keys, passwords, PATs, or other sensitive information.
 

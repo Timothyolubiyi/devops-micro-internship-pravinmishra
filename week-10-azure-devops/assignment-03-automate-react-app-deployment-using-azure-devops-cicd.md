@@ -37,7 +37,7 @@ Add a screenshot of Azure Repos showing:
 * `main` branch
 * Project files
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment3-ss1.png)
 
 ---
 
@@ -81,7 +81,7 @@ Add a screenshot of the Azure Pipeline YAML open in the editor showing:
 * Publish stage
 * Deploy stage
 
-Add your screenshot here.
+![screenshot_2](screenshots/assignment3-ss2.png)
 
 > Do not expose passwords, private keys, tokens, or cloud credentials.
 
@@ -104,7 +104,7 @@ Add a screenshot of one Azure DevOps pipeline run showing all four stages succee
 * Publish
 * Deploy
 
-Add your screenshot here.
+![screenshot_3](screenshots/assignment3-ss3.png)
 
 ---
 
@@ -122,7 +122,7 @@ Add a screenshot of the pipeline SSH verification log or VM terminal showing the
 
 `/var/www/html`
 
-Add your screenshot here.
+![screenshot_4](screenshots/assignment3-ss4.png)
 
 ---
 
@@ -143,7 +143,7 @@ Add a browser screenshot showing:
 * Your Full Name
 * Deployment date
 
-Add your screenshot here.
+![screenshot_5](screenshots/assignment3-ss5.png)
 
 ## Final Application URL
 
@@ -151,7 +151,7 @@ Add your screenshot here.
 
 Replace the placeholder and paste your final application URL below:
 
-[Paste your final application URL here.]
+http://13.60.67.174
 
 ---
 
@@ -159,7 +159,7 @@ Replace the placeholder and paste your final application URL below:
 
 Write a short explanation of the CI/CD workflow you created.
 
-[Write your summary here.]
+The CI/CD workflow was created using Azure DevOps to automate the deployment of a static website. The source code is hosted in Azure Repos, while Terraform provisions a separate Ubuntu deployment server. Ansible configures the server and installs Nginx, and the Azure DevOps pipeline uses SSH to securely transfer website files to the server. The pipeline is triggered by code changes pushed to the main branch, enabling automated and repeatable deployments with the website accessible over HTTP.
 
 ---
 
@@ -174,11 +174,11 @@ Add a screenshot of your LinkedIn post showing:
 * Post text
 * At least one image or link
 
-Add your screenshot here.
+
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here.]
+
 
 > Do not expose VM passwords, tokens, private keys, cloud credentials, or other sensitive information.
 
@@ -199,27 +199,27 @@ Add your screenshot here.
 
 # Completion Checklist
 
-* [ ] All tasks were completed in sequence
-* [ ] The correct React repository was imported into Azure Repos
-* [ ] Your Full Name and date were added to the application
-* [ ] The pipeline YAML was authored and committed to the repository
-* [ ] Commits to `main` trigger the pipeline automatically
-* [ ] The pipeline contains Build, Test, Publish, and Deploy stages
-* [ ] All four stages succeeded in the same pipeline run
-* [ ] The production build moved between stages as a pipeline artifact
-* [ ] The Deploy stage used the SSH Service Connection
-* [ ] No password or secret is stored in the YAML
-* [ ] `index.html` is directly inside `/var/www/html`
-* [ ] Raw React source code was not deployed to the Nginx web root
-* [ ] `node_modules/` was not deployed to the Nginx web root
-* [ ] Nginx is active
-* [ ] The application opens through the VM public IP address
-* [ ] Your Full Name and date are visible in the browser screenshot
-* [ ] Screenshots 1–6 are included and readable
-* [ ] No password, token, private key, account ID, or other secret is visible
-* [ ] The final application URL is included
-* [ ] The LinkedIn post is published
-* [ ] The LinkedIn post URL is included
+* [✅] All tasks were completed in sequence
+* [✅] The correct React repository was imported into Azure Repos
+* [✅] Your Full Name and date were added to the application
+* [✅] The pipeline YAML was authored and committed to the repository
+* [✅] Commits to `main` trigger the pipeline automatically
+* [✅] The pipeline contains Build, Test, Publish, and Deploy stages
+* [✅] All four stages succeeded in the same pipeline run
+* [✅] The production build moved between stages as a pipeline artifact
+* [✅] The Deploy stage used the SSH Service Connection
+* [✅] No password or secret is stored in the YAML
+* [✅] `index.html` is directly inside `/var/www/html`
+* [✅] Raw React source code was not deployed to the Nginx web root
+* [✅] `node_modules/` was not deployed to the Nginx web root
+* [✅] Nginx is active
+* [✅] The application opens through the VM public IP address
+* [✅] Your Full Name and date are visible in the browser screenshot
+* [✅] Screenshots 1–6 are included and readable
+* [✅] No password, token, private key, account ID, or other secret is visible
+* [✅] The final application URL is included
+* [✅] The LinkedIn post is published
+* [✅] The LinkedIn post URL is included
 
 ---
 

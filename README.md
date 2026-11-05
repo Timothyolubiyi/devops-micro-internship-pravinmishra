@@ -139,8 +139,8 @@ Week 07 → Azure Cloud
 | 06 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/share-7481852621096468481-FU1i/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB6VGscB2AplIT7PcrwZvA0ECup4mNaUoIw | https://medium.com/@timothyolubiyi/the-making-of-a-cloud-devsecops-engineer-a-3-year-journey-c5e84230e8f3 |
 | 07 | AWS Cloud | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/activity-7485032646671220736-MMpg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB6VGscB2AplIT7PcrwZvA0ECup4mNaUoIw | https://medium.com/@timothyolubiyi/refining-my-bash-scripting-skills-for-better-devops-automation-3c42a3c4de06?sharedUserId=timothyolubiyi|
 | 08 | Azure Cloud | ✅ Completed | ✅ Solved |  https://www.linkedin.com/posts/timothy-olubiyi-05b9ba123_pravinmishra-devops-cloudcomputing-share-7478792094447382528-yDzR/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB6VGscB2AplIT7PcrwZvA0ECup4mNaUoIw | https://medium.com/@timothyolubiyi/completed-an-ai-assisted-git-safety-pull-request-workflow-lab-ccfd4d6aac66 |
-| 09 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
-| 10 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
+| 09 | Terraform | ✅ Completed | ✅ Solved | — | — |
+| 10 | Ansible | ✅ Completed | ✅ Solved | — | — |
 | 11 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
 | 12 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
 | 13 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
