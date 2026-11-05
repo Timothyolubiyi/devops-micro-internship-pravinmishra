@@ -20,49 +20,47 @@ Create a Docker Hub repository (`my-react-app`), log in from the CLI, tag and pu
 
 #### Screenshot 1 — Docker Hub repository (`my-react-app`)
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment5-ss1.png)
 
 ---
 
 #### Screenshot 2 — Successful `docker login`
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment5-ss2.png)
 
 ---
 
 #### Screenshot 3 — Successful `docker tag`
 
-Add your screenshot here.
 
 ---
 
 #### Screenshot 4 — Successful `docker push`
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment5-ss3.png)
 
 ---
 
 #### Screenshot 5 — Docker Hub repository showing the uploaded image
 
-Add your screenshot here.
 
 ---
 
 #### Screenshot 6 — Successful `docker pull`
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment5-ss4.png)
 
 ---
 
 #### Screenshot 7 — Output of `docker ps`
 
-Add your screenshot here.
+
 
 ---
 
 #### Screenshot 8 — Browser displaying the running React application
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment5-ss5.png)
 
 ---
 
@@ -76,15 +74,13 @@ Create a LinkedIn post covering the assignment title, the Docker Hub repository 
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
 
-`Add your URL here`
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+
 
 ---
 
@@ -99,11 +95,11 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Docker Hub account and repository created
-- [ ] Docker image tagged and pushed successfully (Screenshots 1–5)
-- [ ] Docker image pulled and container run successfully (Screenshots 6–7)
-- [ ] React application accessible in the browser (Screenshot 8)
-- [ ] No sensitive information exposed
+- [✅] Docker Hub account and repository created
+- [✅] Docker image tagged and pushed successfully (Screenshots 1–5)
+- [✅] Docker image pulled and container run successfully (Screenshots 6–7)
+- [✅] React application accessible in the browser (Screenshot 8)
+- [✅] No sensitive information exposed
 
 ---
 

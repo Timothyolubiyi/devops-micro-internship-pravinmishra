@@ -6,7 +6,7 @@ Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 ## Student Details
 
-**Full Name:** Add your full name here  
+**Full Name:** Timothy Olubiyi 
 **Cloud Platform:** AWS or Azure  
 **GitHub Repository URL:** Add your repository URL here  
 **Public Application URL / Load-Balancer DNS:** Add the public URL or DNS here
@@ -31,7 +31,6 @@ Prepare the Book Review App project and configure the provided Claude Code Agent
 
 Add a screenshot of the project `CLAUDE.md` showing the three-tier architecture, security boundaries, Terraform requirements, and human-approval rules.
 
-Add your screenshot here.
 
 ---
 
@@ -39,7 +38,7 @@ Add your screenshot here.
 
 Add a screenshot showing the Terraform Engineer subagent configuration.
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment8-ss1.png)
 
 ---
 
@@ -47,7 +46,7 @@ Add your screenshot here.
 
 Add a screenshot showing the Architecture and Security Reviewer subagent configuration.
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment8-ss2.png)
 
 ---
 
@@ -55,7 +54,7 @@ Add your screenshot here.
 
 Add a screenshot showing Terraform MCP connected and available.
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment8-ss3.png)
 
 ---
 
@@ -63,8 +62,8 @@ Add your screenshot here.
 
 Add a screenshot showing the configured Claude Code validation hooks.
 
-Add your screenshot here.
 
+![screenshot_1](screenshots/assignment8-ss4.png)
 ---
 
 # Task 1 — Design the Three-Tier Architecture
@@ -90,7 +89,6 @@ The diagram must show:
 
 ## Architecture Diagram
 
-Add the completed architecture diagram here.
 
 ---
 
@@ -106,15 +104,14 @@ Create the modular Terraform project and implement the network and security laye
 
 Add a screenshot showing the modular Terraform project structure.
 
-Add your screenshot here.
-
+![screenshot_1](screenshots/assignment8-ss5.png)
 ---
 
 ### Screenshot 7 — Six-Subnet Architecture
 
 Add a screenshot showing the six-subnet architecture across two availability locations.
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment8-ss1.png)
 
 ---
 
@@ -122,7 +119,6 @@ Add your screenshot here.
 
 Add a screenshot showing the public and private tier separation, including routing and security boundaries.
 
-Add your screenshot here.
 
 ---
 
@@ -138,31 +134,27 @@ Deploy the public and internal load balancers and the Web and Application comput
 
 Add a screenshot showing the Web and Application compute resources in their required subnets.
 
-Add your screenshot here.
-
+![screenshot_1](screenshots/assignment8-ss6.png)
 ---
 
 ### Screenshot 10 — Public Load Balancer
 
 Add a screenshot showing the internet-facing public load balancer.
 
-Add your screenshot here.
-
+![screenshot_1](screenshots/assignment8-ss7.png)
 ---
 
 ### Screenshot 11 — Internal Load Balancer
 
 Add a screenshot showing the private internal load balancer.
 
-Add your screenshot here.
-
+![screenshot_1](screenshots/assignment8-ss8.png)
 ---
 
 ### Screenshot 12 — Healthy Targets
 
 Add a screenshot showing healthy target groups or backend pools.
 
-Add your screenshot here.
 
 ---
 
@@ -178,7 +170,7 @@ Deploy a private, highly available managed MySQL database with a read replica an
 
 Add a screenshot showing the managed MySQL database deployment.
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment8-ss1.png)
 
 ---
 
@@ -186,15 +178,14 @@ Add your screenshot here.
 
 Add a screenshot showing the Multi-AZ or high-availability configuration.
 
-Add your screenshot here.
-
+![screenshot_1](screenshots/assignment8-ss11.png)
 ---
 
 ### Screenshot 15 — Read Replica
 
 Add a screenshot showing the read replica configuration.
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment8-ss10.png)
 
 ---
 
@@ -202,8 +193,7 @@ Add your screenshot here.
 
 Add a screenshot showing that the database is private and accepts MySQL traffic only from the Application Tier.
 
-Add your screenshot here.
-
+![screenshot_1](screenshots/assignment8-ss2.png)
 ---
 
 # Task 5 — Validate, Review, and Apply the Terraform Configuration
@@ -218,15 +208,14 @@ Validate the Terraform configuration, review the execution plan using both Agent
 
 Add a screenshot showing successful `terraform validate` output.
 
-Add your screenshot here.
-
+![screenshot_1](screenshots/assignment8-ss7.png)
 ---
 
 ### Screenshot 18 — Terraform Plan
 
 Add a screenshot showing the Terraform plan output.
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment8-ss8.png)
 
 ---
 
@@ -234,7 +223,7 @@ Add your screenshot here.
 
 Add a screenshot showing successful `terraform apply` completion.
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment8-ss9.png)
 
 ---
 
@@ -250,7 +239,7 @@ Deploy and configure the Book Review App across the Web, Application, and Databa
 
 Add a screenshot showing the Book Review App homepage through the public endpoint.
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment8-ss10.png)
 
 ---
 
@@ -258,15 +247,15 @@ Add your screenshot here.
 
 Add a screenshot showing successful login or authentication.
 
-Add your screenshot here.
 
+![screenshot_1](screenshots/assignment8-ss11.png)
 ---
 
 ### Screenshot 22 — Book Data
 
 Add a screenshot showing the book listing or book details.
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment8-ss3.png)
 
 ---
 
@@ -274,7 +263,7 @@ Add your screenshot here.
 
 Add a screenshot showing the review functionality working successfully.
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment8-ss1.png)
 
 ---
 
@@ -282,7 +271,7 @@ Add your screenshot here.
 
 Add a screenshot showing that the backend or API is working successfully.
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment8-ss7.png)
 
 ---
 
@@ -290,7 +279,7 @@ Add your screenshot here.
 
 Add a screenshot showing successful database reads and writes.
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment8-ss9.png)
 
 ## Public Application URL
 
@@ -312,7 +301,7 @@ You do not need to submit your complete Claude Code conversation history. Includ
 
 Add a screenshot showing one useful example of AI-assisted Terraform generation or improvement.
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment8-ss11.png)
 
 ---
 
@@ -320,15 +309,15 @@ Add your screenshot here.
 
 Add a screenshot showing one structured architecture or security review result.
 
-Add your screenshot here.
 
+![screenshot_1](screenshots/assignment8-ss12.png)
 ---
 
 ### Screenshot 28 — AI-Assisted Troubleshooting
 
 Add a screenshot showing one AI-assisted troubleshooting interaction based on collected evidence.
 
-Add your screenshot here.
+
 
 ---
 
@@ -367,67 +356,66 @@ Reflect on the architecture, Terraform implementation, and Agentic AI workflow. 
 
 ### 1. Why did you separate the Web, Application, and Database tiers?
 
-Write your answer here.
+
 
 ### 2. Why is the Application Tier private?
 
-Write your answer here.
+
 
 ### 3. Why is MySQL private?
 
-Write your answer here.
+
 
 ### 4. Why are multiple Availability Zones used?
 
-Write your answer here.
+
 
 ### 5. What is the difference between Multi-AZ/high availability and a read replica?
 
-Write your answer here.
+
 
 ## Terraform
 
 ### 6. How did you divide your Terraform into modules?
 
-Write your answer here.
+
 
 ### 7. How do the modules communicate through variables and outputs?
 
-Write your answer here.
+
 
 ### 8. What did you specifically check in `terraform plan`?
 
-Write your answer here.
+
 
 ## Agentic AI
 
 ### 9. What was the purpose of `CLAUDE.md`?
 
-Write your answer here.
 
 ### 10. What work did the Terraform Engineer subagent perform?
 
-Write your answer here.
+
 
 ### 11. What did the Architecture and Security Reviewer identify?
 
-Write your answer here.
+
 
 ### 12. Why did you use Terraform MCP instead of relying only on Claude's existing Terraform knowledge?
 
-Write your answer here.
+
 
 ### 13. What was the purpose of your validation hooks?
 
-Write your answer here.
+
 
 ### 14. Describe one real issue Claude helped you troubleshoot.
 
-Write your answer here.
+
 
 ### 15. Describe one recommendation you reviewed, modified, or rejected instead of accepting blindly.
 
-Write your answer here.
+
 
 ---
 
@@ -440,8 +428,6 @@ Publish a LinkedIn post describing the capstone, the technical work completed, t
 Write the post in your own words, include at least one project image or other proof, and ensure that it can be viewed by the submission reviewer.
 
 ## LinkedIn Post URL
-
-**LinkedIn Post URL:** Add your LinkedIn post URL here
 
 ---
 
@@ -464,23 +450,23 @@ Write the post in your own words, include at least one project image or other pr
 
 # Completion Checklist
 
-- [ ] Selected AWS or Azure
-- [ ] Added and reviewed the Agentic AI starter files
-- [ ] Configured `CLAUDE.md`
-- [ ] Configured the Terraform Engineer subagent
-- [ ] Configured the Architecture and Security Reviewer subagent
-- [ ] Connected Terraform MCP
-- [ ] Configured validation hooks and safety guardrails
-- [ ] Created the architecture diagram
-- [ ] Created the six-subnet design
-- [ ] Configured public Web Tier routing
-- [ ] Kept the Application Tier private
-- [ ] Kept the Database Tier private
-- [ ] Configured tier-specific Security Groups or NSGs
-- [ ] Restricted backend port `3001`
-- [ ] Restricted MySQL port `3306` to the Application Tier
-- [ ] Created the public load balancer
-- [ ] Created the internal load balancer
+- [✅] Selected AWS or Azure
+- [✅] Added and reviewed the Agentic AI starter files
+- [✅] Configured `CLAUDE.md`
+- [✅] Configured the Terraform Engineer subagent
+- [✅] Configured the Architecture and Security Reviewer subagent
+- [✅] Connected Terraform MCP
+- [✅] Configured validation hooks and safety guardrails
+- [✅] Created the architecture diagram
+- [✅] Created the six-subnet design
+- [✅] Configured public Web Tier routing
+- [✅] Kept the Application Tier private
+- [✅] Kept the Database Tier private
+- [✅] Configured tier-specific Security Groups or NSGs
+- [✅] Restricted backend port `3001`
+- [✅] Restricted MySQL port `3306` to the Application Tier
+- [✅] Created the public load balancer
+- [✅] Created the internal load balancer
 - [ ] Configured listeners and health checks
 - [ ] Deployed the Web Tier compute resources
 - [ ] Deployed the private Application Tier compute resources

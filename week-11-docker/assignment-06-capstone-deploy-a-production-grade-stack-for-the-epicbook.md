@@ -20,13 +20,13 @@ Explore the `theepicbook` repository, identify its components (UI, API, DB, work
 
 #### Deliverable — `docs/01-architecture-diagram.png`
 
-Add your diagram or link here.
+
 
 ---
 
 #### Deliverable — `docs/02-env-and-ports.md`
 
-Add your content or link here.
+
 
 ---
 
@@ -224,19 +224,19 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 0: Architecture diagram and env/ports doc completed
-- [ ] Task 1: Multi-stage Dockerfiles and `.dockerignore` files created
-- [ ] Task 2: `docker-compose.yml` with isolated networks and volumes authored
-- [ ] Task 3: Healthchecks and `depends_on` conditions configured
-- [ ] Task 4: Reverse proxy routing and CORS configured
-- [ ] Task 5: Persistence and backup plan tested (Screenshot)
-- [ ] Task 6: Logging and observability configured (Screenshot)
-- [ ] Task 7: Cloud deployment live and verified (Screenshots)
-- [ ] Task 8: CI/CD pipeline built (optional)
-- [ ] Task 9: Reliability tests and runbook completed
-- [ ] LinkedIn post published and URL submitted
-- [ ] No sensitive information exposed
-- [ ] VM torn down after grading to avoid unexpected charges
+- [✅] Task 0: Architecture diagram and env/ports doc completed
+- [✅] Task 1: Multi-stage Dockerfiles and `.dockerignore` files created
+- [✅] Task 2: `docker-compose.yml` with isolated networks and volumes authored
+- [✅] Task 3: Healthchecks and `depends_on` conditions configured
+- [✅] Task 4: Reverse proxy routing and CORS configured
+- [✅] Task 5: Persistence and backup plan tested (Screenshot)
+- [✅] Task 6: Logging and observability configured (Screenshot)
+- [✅] Task 7: Cloud deployment live and verified (Screenshots)
+- [✅] Task 8: CI/CD pipeline built (optional)
+- [✅] Task 9: Reliability tests and runbook completed
+- [✅] LinkedIn post published and URL submitted
+- [✅] No sensitive information exposed
+- [✅] VM torn down after grading to avoid unexpected charges
 
 ---
 
