@@ -174,7 +174,7 @@ Ansible should be installed inside a Python virtual environment to isolate its d
 
 **4. Why must SSH private keys and `.venv/` remain outside version control?**
 
-Add your answer here.
+
 
 ---
 
