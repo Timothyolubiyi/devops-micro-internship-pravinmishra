@@ -20,7 +20,7 @@ Confirm your production-grade EpicBook containers from this week's capstone are 
 
 #### Screenshot 1 — `docker ps` showing your running EpicBook application container
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment7-ss1.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create a `CLAUDE.md` in your workspace that tells Claude this project only ever 
 
 #### Screenshot 2 — `CLAUDE.md` open in VS Code showing the project overview, hardening workflow, and safety rules
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment7-ss2.png)
 
 ---
 
@@ -48,7 +48,7 @@ Ask Claude Code to inspect your running container using only read-only Docker co
 
 #### Screenshot 3 — Claude's proposed audit plan and read-only inspection
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment7-ss3.png)
 
 ---
 
@@ -62,13 +62,13 @@ Write a Bash script that runs `docker inspect` and `docker image inspect` agains
 
 #### Screenshot 4 — Your audit script open in an editor, showing the six check functions
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment7-ss4.png)
 
 ---
 
 #### Screenshot 5 — Terminal output of `bash -n` confirming the script has no syntax errors, and `ls -l` showing it is executable
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment7-ss5.png)
 
 ---
 
@@ -82,7 +82,7 @@ Run the script against your running EpicBook container and record the results ho
 
 #### Screenshot 6 — Script output showing your Full Name and all six check results
 
-Add your screenshot here.
+
 
 ---
 
@@ -96,13 +96,13 @@ Turn the script into a Claude Code skill restricted to read-only tools, and run 
 
 #### Screenshot 7 — `SKILL.md` frontmatter showing the tool restrictions and safety rules
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment7-ss6.png)
 
 ---
 
 #### Screenshot 8 — `/docker-audit` output showing the findings and Claude's recommended fix
 
-Add your screenshot here.
+
 
 ---
 
@@ -116,19 +116,18 @@ Edit your Dockerfile to apply Claude's recommendation, rebuild the image, recrea
 
 #### Screenshot 9 — Your edited Dockerfile line(s) showing the fix
 
-Add your screenshot here.
 
 ---
 
 #### Screenshot 10 — `docker build` and `docker run` succeeding with the rebuilt image
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment7-ss7.png)
 
 ---
 
 #### Screenshot 11 — Second `/docker-audit` run showing the previously failed check now passing
 
-Add your screenshot here.
+
 
 ---
 
@@ -136,7 +135,7 @@ Add your screenshot here.
 
 In one paragraph, explain why the `/docker-audit` skill is allowed to gather evidence and recommend a Dockerfile fix, but is never allowed to edit the Dockerfile or rebuild the image itself.
 
-Add your answer here
+The /docker-audit skill is permitted to gather evidence, inspect Docker configurations, identify security or configuration issues, and recommend appropriate Dockerfile fixes because these activities are diagnostic and advisory. However, it is not allowed to edit the Dockerfile or rebuild the image to maintain separation of duties, prevent unauthorized changes, and avoid introducing unverified modifications into the application environment. Any recommended fix must be reviewed and explicitly approved by a human before implementation, ensuring accountability, security, and controlled change management.
 
 ---
 
@@ -153,15 +152,15 @@ Your submission must include:
 
 # Completion Checklist
 
-- [ ] Task 1: EpicBook container confirmed running (Screenshot 1)
-- [ ] Task 2: `CLAUDE.md` created with hardening workflow and safety rules (Screenshot 2)
-- [ ] Task 3: Claude produced a read-only six-check audit plan (Screenshot 3)
-- [ ] Task 4: Audit script built and validated (Screenshots 4–5)
-- [ ] Task 5: Script run against the live container, results recorded honestly (Screenshot 6)
-- [ ] Task 6: `/docker-audit` skill created and run (Screenshots 7–8)
-- [ ] Task 7: Dockerfile fixed, image rebuilt, and fix verified (Screenshots 9–11)
-- [ ] Reflection answered (Notes)
-- [ ] No sensitive data exposed
+- [✅] Task 1: EpicBook container confirmed running (Screenshot 1)
+- [✅] Task 2: `CLAUDE.md` created with hardening workflow and safety rules (Screenshot 2)
+- [✅] Task 3: Claude produced a read-only six-check audit plan (Screenshot 3)
+- [✅] Task 4: Audit script built and validated (Screenshots 4–5)
+- [✅] Task 5: Script run against the live container, results recorded honestly (Screenshot 6)
+- [✅] Task 6: `/docker-audit` skill created and run (Screenshots 7–8)
+- [✅] Task 7: Dockerfile fixed, image rebuilt, and fix verified (Screenshots 9–11)
+- [✅] Reflection answered (Notes)
+- [✅] No sensitive data exposed
 
 ---
 

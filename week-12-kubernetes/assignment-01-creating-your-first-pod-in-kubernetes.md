@@ -20,7 +20,7 @@ Create the `~/k8s-labs/pods` working directory for all Pod-related files.
 
 #### Screenshot 1 — Terminal showing the `~/k8s-labs/pods` working directory
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment1-ss1.png)
 
 ---
 
@@ -75,11 +75,11 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Lab directory created (Screenshot 1)
-- [ ] Task 2: Pod created imperatively, verified, and deleted (Screenshot 2)
-- [ ] Task 3: Pod created declaratively and verified Running (Screenshot 3)
-- [ ] Task 4: Pod inspected via describe/logs/exec (Screenshot 4)
-- [ ] Understood the difference between imperative and declarative methods
+- [✅] Task 1: Lab directory created (Screenshot 1)
+- [✅] Task 2: Pod created imperatively, verified, and deleted (Screenshot 2)
+- [✅] Task 3: Pod created declaratively and verified Running (Screenshot 3)
+- [✅] Task 4: Pod inspected via describe/logs/exec (Screenshot 4)
+- [✅] Understood the difference between imperative and declarative methods
 
 ---
 

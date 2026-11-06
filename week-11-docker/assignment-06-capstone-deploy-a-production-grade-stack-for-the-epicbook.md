@@ -40,7 +40,7 @@ Create minimal multi-stage Dockerfiles for the frontend and backend services, wi
 
 #### Deliverable — `frontend/Dockerfile`, `backend/Dockerfile`, and `.dockerignore` files, with a note on layer optimizations and security benefits
 
-Add your content or link here.
+
 
 ---
 
@@ -54,7 +54,7 @@ Author `docker-compose.yml` defining the reverse-proxy, frontend, backend, and d
 
 #### Deliverable — `docker-compose.yml`
 
-Add your content or link here.
+![screenshot_1](screenshots/assignment6-ss1.png)
 
 ---
 
@@ -68,7 +68,7 @@ Add a database healthcheck, a `/health` endpoint check on the backend, and `depe
 
 #### Deliverable — `docs/03-healthchecks-and-depends-on.md`
 
-Add your content or link here.
+![screenshot_1](screenshots/assignment6-ss2.png)
 
 ---
 
@@ -82,7 +82,7 @@ Configure Nginx or Traefik to route `/api` to the backend and `/` to the fronten
 
 #### Deliverable — `docs/04-proxy-routing-and-cors.md`
 
-Add your content or link here.
+![screenshot_1](screenshots/assignment6-ss3.png)
 
 ---
 
@@ -96,13 +96,13 @@ Mount the database data directory to a named volume, document a snapshot/backup 
 
 #### Deliverable — `docs/05-persistence-and-backup.md`
 
-Add your content or link here.
+![screenshot_1](screenshots/assignment6-ss4.png)
 
 ---
 
 #### Screenshot — System state before and after a manual snapshot restore cycle
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment6-ss5.png)
 
 ---
 
@@ -116,13 +116,13 @@ Bind-mount the reverse proxy log directory to the host, redirect application log
 
 #### Deliverable — `docs/06-logging-layout.md`
 
-Add your content or link here.
+![screenshot_1](screenshots/assignment6-ss6.png)
 
 ---
 
 #### Screenshot — Live running JSON container log entries
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment6-ss7.png)
 
 ---
 
@@ -136,19 +136,19 @@ Provision a VM per the security requirements (SSH restricted to your IP; HTTP/HT
 
 #### Deliverable — `docs/07-cloud-deployment-notes.md` (ports, firewall rules, deployment link)
 
-Add your content or link here.
+
 
 ---
 
 #### Screenshot — Browser showing successful web UI retrieval via the cloud public IP
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment6-ss8.png)
 
 ---
 
 #### Screenshot — Active page interaction confirming backend API data fetches succeed
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment6-ss9.png)
 
 ---
 
@@ -162,13 +162,13 @@ Build a pipeline (Azure Pipelines or GitHub Actions) that builds and tags multi-
 
 #### Deliverable — `docs/08-ci-cd-pipeline.md`
 
-Add your content or link here.
+
 
 ---
 
 #### Screenshot (optional) — Completed automated pipeline run
 
-Add your screenshot here.
+
 
 ---
 
@@ -178,17 +178,12 @@ Add your screenshot here.
 
 Inject faults (drop backend/database dependencies) and evaluate frontend error handling, then write an operations runbook covering startup, shutdown, secret rotation, and disaster recovery.
 
-### Evidence
-
-#### Deliverable — `docs/09-runbook.md`
-
-Add your content or link here.
 
 ---
 
 #### Deliverable — `docs/10-reliability-tests.md`
 
-Add your content or link here.
+
 
 ---
 
@@ -202,15 +197,13 @@ Publish a 6–10 line LinkedIn post covering the architectural decision that mos
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
 
-`Add your URL here`
 
 ---
 
 #### Screenshot — Published LinkedIn post showing the text body and a deployment verification image
 
-Add your screenshot here.
+
 
 ---
 
