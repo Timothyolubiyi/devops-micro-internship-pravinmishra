@@ -20,7 +20,7 @@ Create the `~/k8s-labs/deployments` working directory.
 
 #### Screenshot 1 — Terminal showing the `~/k8s-labs/deployments` working directory
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment3-ss1.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create `nginx-deployment.yaml` with two replicas and image `nginx:1.21.1`, apply
 
 #### Screenshot 2 — Manifest plus `kubectl` output showing the Deployment, ReplicaSet, and two Pods
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment3-ss2.png)
 
 ---
 
@@ -48,7 +48,7 @@ Add `strategy.rollingUpdate` with `maxSurge: 1` and `maxUnavailable: 0` to the D
 
 #### Screenshot 3 — Deployment YAML showing the RollingUpdate strategy and successful apply output
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment3-ss3.png)
 
 ---
 
@@ -62,7 +62,7 @@ Update the image to `nginx:1.23.1` with `kubectl set image`, watch the rollout, 
 
 #### Screenshot 4 — Rolling-update status, multiple ReplicaSets, and successful rollback/history output
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment3-ss4.png)
 
 ---
 
@@ -76,7 +76,7 @@ Scale to five replicas, verify, then scale back to two.
 
 #### Screenshot 5 — Terminal showing the scale-up and scale-down results
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment3-ss5.png)
 
 ---
 
@@ -84,7 +84,7 @@ Add your screenshot here.
 
 Write a short note describing what the lab demonstrated.
 
-Write your answer here.
+The Kubernetes (K8s) lab demonstrated the fundamentals of container orchestration, including deploying and managing containerized applications, working with Pods, Deployments, and Services, and understanding how Kubernetes handles application scaling, networking, and availability. It provided practical experience with managing application workloads, monitoring deployment status, and troubleshooting issues within a Kubernetes cluster.
 
 ---
 
@@ -97,12 +97,12 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Task 1: Lab directory created (Screenshot 1)
-- [ ] Task 2: Two-replica Deployment applied (Screenshot 2)
-- [ ] Task 3: RollingUpdate strategy configured (Screenshot 3)
-- [ ] Task 4: Image updated and rolled back (Screenshot 4)
-- [ ] Task 5: Scaled up and down (Screenshot 5)
-- [ ] Reflection notes written (Notes)
+- [✅] Task 1: Lab directory created (Screenshot 1)
+- [✅] Task 2: Two-replica Deployment applied (Screenshot 2)
+- [✅] Task 3: RollingUpdate strategy configured (Screenshot 3)
+- [✅] Task 4: Image updated and rolled back (Screenshot 4)
+- [✅] Task 5: Scaled up and down (Screenshot 5)
+- [✅] Reflection notes written (Notes)
 
 ---
 

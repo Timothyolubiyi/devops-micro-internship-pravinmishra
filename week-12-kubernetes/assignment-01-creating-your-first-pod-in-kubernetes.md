@@ -34,7 +34,7 @@ Create `nginx-pod` with `kubectl run --image=nginx`, verify it reaches Running, 
 
 #### Screenshot 2 — Terminal showing `nginx-pod` in Running state before deletion
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment1-ss2.png)
 
 ---
 
@@ -48,7 +48,7 @@ Write `nginx-pod.yaml` (apiVersion `v1`, kind `Pod`, label `app: nginx`, contain
 
 #### Screenshot 3 — `nginx-pod.yaml` and terminal output showing `nginx-pod` in Running state
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment1-ss2.png)
 
 ---
 
@@ -62,7 +62,7 @@ Run `kubectl describe`, `kubectl logs`, and `kubectl exec -it ... -- /bin/bash` 
 
 #### Screenshot 4 — Terminal showing `kubectl describe`, `kubectl logs`, or the `/usr/share/nginx/html` directory
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment1-ss3.png)
 
 ---
 
