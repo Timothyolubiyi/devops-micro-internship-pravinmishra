@@ -20,13 +20,13 @@ Select a Kubernetes platform, confirm `kubectl` (and Helm, if used) can communic
 
 #### Screenshot 1 — Terminal showing the active Kubernetes context and Ready nodes
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment10-ss1.png)
 
 ---
 
 #### Screenshot 2 (if using Helm) — Terminal showing `helm version`
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment10-ss2.png)
 
 ---
 
@@ -40,7 +40,7 @@ Create an architecture diagram showing the public entry point, frontend, interna
 
 #### Screenshot 3 — Completed Kubernetes architecture diagram
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment10-ss3.png)
 
 ---
 
@@ -54,13 +54,13 @@ Externalize non-sensitive configuration into ConfigMaps and sensitive values (da
 
 #### Screenshot 4 — ConfigMap manifest or `kubectl describe configmap` output showing non-sensitive configuration
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment10-ss4.png)
 
 ---
 
 #### Screenshot 5 — Secret object usage with sensitive values hidden or redacted
 
-Add your screenshot here.
+
 
 ---
 
@@ -74,13 +74,13 @@ Provide a persistent MySQL database (managed service or StatefulSet + PVC) reach
 
 #### Screenshot 6 — Managed MySQL status or MySQL StatefulSet/PVC status
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment10-ss5.png)
 
 ---
 
 #### Screenshot 7 — Successful database connectivity or schema verification with credentials hidden
 
-Add your screenshot here.
+
 
 ---
 
@@ -94,13 +94,13 @@ Run one or two Node.js/Express backend replicas on port 3010, expose them via Cl
 
 #### Screenshot 8 — Backend Deployment, Pods, and internal Service
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment10-ss6.png)
 
 ---
 
 #### Screenshot 9 — Backend logs showing successful startup and database connectivity
 
-Add your screenshot here.
+
 
 ---
 
@@ -114,13 +114,13 @@ Run one or two Next.js frontend replicas behind Nginx on port 80, reverse-proxyi
 
 #### Screenshot 10 — Frontend Deployment and Ready Pods
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment10-ss7.png)
 
 ---
 
 #### Screenshot 11 — Nginx reverse-proxy configuration showing the internal backend Service name
 
-Add your screenshot here.
+
 
 ---
 
@@ -134,13 +134,13 @@ Expose only the frontend publicly (LoadBalancer or Ingress), restrict backend ac
 
 #### Screenshot 12 — Frontend LoadBalancer or Ingress showing the public endpoint
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment10-ss8.png)
 
 ---
 
 #### Screenshot 13 — Internal backend Service and NetworkPolicy (or equivalent restriction)
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment10-ss9.png)
 
 ---
 
@@ -154,25 +154,25 @@ Confirm the frontend loads publicly, a full user flow reaches the backend and My
 
 #### Screenshot 14 — `kubectl get all` output
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment10-ss10.png)
 
 ---
 
 #### Screenshot 15 — Functional Book Review App in the browser with the public URL or IP visible
 
-Add your screenshot here.
+
 
 ---
 
 #### Screenshot 16 — Frontend Pod logs
 
-Add your screenshot here.
+
 
 ---
 
 #### Screenshot 17 — Backend Pod logs showing successful requests or database activity
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment10-ss11.png)
 
 ---
 
@@ -192,7 +192,7 @@ Optionally package as a Helm chart, add HPA, add readiness/liveness probes, or c
 
 #### Screenshot 19 (optional) — Helm release, HPA, probes, or TLS evidence
 
-Add your screenshot here.
+
 
 ---
 
@@ -200,7 +200,7 @@ Add your screenshot here.
 
 Report the Kubernetes platform used, the public frontend URL/IP, a GitHub link to your manifests/Helm chart (if applicable), and the architecture diagram link. Summarize what worked, issues encountered and how they were resolved, and the tools/sources that helped the most.
 
-Write your answer here.
+
 
 ---
 
@@ -213,17 +213,17 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Task 1: Cluster and tooling verified (Screenshots 1–2)
-- [ ] Task 2: Architecture diagram completed (Screenshot 3)
-- [ ] Task 3: ConfigMaps and Secrets created (Screenshots 4–5)
-- [ ] Task 4: MySQL data tier deployed and verified (Screenshots 6–7)
-- [ ] Task 5: Backend tier deployed internally (Screenshots 8–9)
-- [ ] Task 6: Frontend deployed behind Nginx (Screenshots 10–11)
-- [ ] Task 7: External/internal networking configured (Screenshots 12–13)
-- [ ] Task 8: End-to-end validation completed (Screenshots 14–18)
-- [ ] Task 9: Optional production enhancements documented (Screenshot 19)
-- [ ] Report completed (Notes)
-- [ ] No sensitive information exposed
+- [✅] Task 1: Cluster and tooling verified (Screenshots 1–2)
+- [✅] Task 2: Architecture diagram completed (Screenshot 3)
+- [✅] Task 3: ConfigMaps and Secrets created (Screenshots 4–5)
+- [✅] Task 4: MySQL data tier deployed and verified (Screenshots 6–7)
+- [✅] Task 5: Backend tier deployed internally (Screenshots 8–9)
+- [✅] Task 6: Frontend deployed behind Nginx (Screenshots 10–11)
+- [✅] Task 7: External/internal networking configured (Screenshots 12–13)
+- [✅] Task 8: End-to-end validation completed (Screenshots 14–18)
+- [✅] Task 9: Optional production enhancements documented (Screenshot 19)
+- [✅] Report completed (Notes)
+- [✅] No sensitive information exposed
 
 ---
 

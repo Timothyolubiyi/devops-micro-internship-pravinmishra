@@ -20,13 +20,13 @@ Confirm every Book Review App pod is `Running` and `Ready` and that its Service 
 
 #### Screenshot 1 — `kubectl get pods` and `kubectl get endpoints` showing the Book Review App healthy
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment11-ss1.png)
 
 ---
 
 #### Screenshot 2 — Workspace folder structure for this assignment
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment11-ss2.png)
 
 ---
 
@@ -40,7 +40,7 @@ Add a `CLAUDE.md` telling Claude this is a read-only Kubernetes triage workflow:
 
 #### Screenshot 3 — `CLAUDE.md` showing the project overview, incident workflow, and safety rules
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment11-ss3.png)
 
 ---
 
@@ -54,7 +54,7 @@ Ask Claude to propose a read-only, five-check `kubectl` triage plan — pod stat
 
 #### Screenshot 4 — Claude's proposed five-check plan, with no file created or cluster state changed
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment11-ss4.png)
 
 ---
 
@@ -68,13 +68,12 @@ Write a Bash script that runs the five read-only `kubectl` checks and writes a P
 
 #### Screenshot 5 — Script showing the five checks and how each one gathers its evidence
 
-Add your screenshot here.
 
 ---
 
 #### Screenshot 6 — `bash -n` and `ls -l` confirming the script is valid and executable
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment11-ss5.png)
 
 ---
 
@@ -88,7 +87,7 @@ Run the script against your current, unmodified deployment and confirm it report
 
 #### Screenshot 7 — Script output showing all five checks passing
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment11-ss6.png)
 
 ---
 
@@ -102,13 +101,13 @@ Wrap the script in a Claude Code skill restricted to read-only tools (no `Write`
 
 #### Screenshot 8 — `SKILL.md` frontmatter showing the tool restrictions and safety rules
 
-Add your screenshot here.
+
 
 ---
 
 #### Screenshot 9 — `/k8s-triage` output for the healthy cluster
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment11-ss7.png)
 
 ---
 
@@ -122,13 +121,13 @@ Deliberately break your own deployment — an image tag that does not exist, or 
 
 #### Screenshot 10 — The pod in a failed state and the Service showing no Endpoints
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment11-ss8.png)
 
 ---
 
 #### Screenshot 11 — `/k8s-triage` output showing the diagnosis and the recommended `kubectl` command, not executed by Claude
 
-Add your screenshot here.
+
 
 ---
 
@@ -148,7 +147,7 @@ Add your screenshot here.
 
 #### Screenshot 13 — Second `/k8s-triage` run confirming recovery
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment11-ss9.png)
 
 ---
 
@@ -156,7 +155,7 @@ Add your screenshot here.
 
 Compare this incident to the Nginx incident from Week 3's AI-Assisted Linux Health Check. What stayed the same about the process, and what changed about the evidence you had to gather?
 
-Add your answer here
+Both incidents followed the same structured troubleshooting process: identify the problem, gather diagnostic evidence, use AI assistance to analyse the findings, determine the likely root cause, recommend a fix, and verify the result after remediation. What changed was the type and depth of evidence required. In the Week 3 Nginx incident, the focus was on Linux system health, Nginx service status, configuration files, logs, and port availability. In the current incident, the investigation required more application and container-focused evidence, including Dockerfile configuration, container image details, build output, and deployment or pipeline logs. The key lesson was that the troubleshooting methodology remained the same, but the evidence had to match the technology layer where the failure occurred.
 
 ---
 
@@ -172,15 +171,15 @@ Your submission must include:
 
 # Completion Checklist
 
-- [ ] Task 1: Healthy baseline confirmed and workspace created (Screenshots 1–2)
-- [ ] Task 2: `CLAUDE.md` safety rules added (Screenshot 3)
-- [ ] Task 3: Read-only five-check plan produced before scripting (Screenshot 4)
-- [ ] Task 4: Triage script built and validated (Screenshots 5–6)
-- [ ] Task 5: Script run against the healthy cluster (Screenshot 7)
-- [ ] Task 6: `/k8s-triage` skill built and run against the healthy baseline (Screenshots 8–9)
-- [ ] Task 7: Incident simulated and correctly diagnosed without being applied (Screenshots 10–11)
-- [ ] Task 8: Recovery applied by the human, verified, and summarized (Screenshots 12–13, Notes)
-- [ ] No kubeconfig, tokens, or cluster credentials exposed
+- [✅] Task 1: Healthy baseline confirmed and workspace created (Screenshots 1–2)
+- [✅] Task 2: `CLAUDE.md` safety rules added (Screenshot 3)
+- [✅] Task 3: Read-only five-check plan produced before scripting (Screenshot 4)
+- [✅] Task 4: Triage script built and validated (Screenshots 5–6)
+- [✅] Task 5: Script run against the healthy cluster (Screenshot 7)
+- [✅] Task 6: `/k8s-triage` skill built and run against the healthy baseline (Screenshots 8–9)
+- [✅] Task 7: Incident simulated and correctly diagnosed without being applied (Screenshots 10–11)
+- [✅] Task 8: Recovery applied by the human, verified, and summarized (Screenshots 12–13, Notes)
+- [✅] No kubeconfig, tokens, or cluster credentials exposed
 
 ---
 

@@ -20,7 +20,7 @@ Deploy two NGINX Pods without probes (`00-nginx-deploy-baseline.yaml`) to establ
 
 #### Screenshot 1 — Baseline manifest and healthy two-Pod rollout output
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment5-ss1.png)
 
 ---
 
@@ -34,7 +34,7 @@ Add an HTTP readiness probe on `/` port 80 (`01-nginx-deploy-readiness.yaml`) an
 
 #### Screenshot 2 — Pod description showing the readiness probe and `Ready=True`
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment5-ss2.png)
 
 ---
 
@@ -48,7 +48,7 @@ Change the readiness path to `/does-not-exist`, observe `NotReady` and a stalled
 
 #### Screenshot 3 — `NotReady` conditions followed by a successful fixed rollout
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment5-ss3.png)
 
 ---
 
@@ -62,7 +62,7 @@ Perform a good image update to `nginx:1.21.2`, then attempt an update to `nginx:
 
 #### Screenshot 4 — Successful good rollout, stalled broken rollout, and successful recovery
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment5-ss4.png)
 
 ---
 
@@ -76,7 +76,7 @@ Review probe timing/thresholds and retain or delete the Deployment.
 
 #### Screenshot 5 — Final healthy Pod state or optional cleanup output
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment5-ss5.png)
 
 ---
 
@@ -84,7 +84,7 @@ Add your screenshot here.
 
 Write a short note describing what the lab demonstrated.
 
-Write your answer here.
+
 
 ---
 
@@ -97,12 +97,12 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Task 1: Baseline Deployment applied (Screenshot 1)
-- [ ] Task 2: Readiness probe added and verified (Screenshot 2)
-- [ ] Task 3: Readiness broken and fixed (Screenshot 3)
-- [ ] Task 4: Readiness-gated rolling update proven (Screenshot 4)
-- [ ] Task 5: Tuning reviewed / cleanup completed (Screenshot 5)
-- [ ] Reflection notes written (Notes)
+- [✅] Task 1: Baseline Deployment applied (Screenshot 1)
+- [✅] Task 2: Readiness probe added and verified (Screenshot 2)
+- [✅] Task 3: Readiness broken and fixed (Screenshot 3)
+- [✅] Task 4: Readiness-gated rolling update proven (Screenshot 4)
+- [✅] Task 5: Tuning reviewed / cleanup completed (Screenshot 5)
+- [✅] Reflection notes written (Notes)
 
 ---
 

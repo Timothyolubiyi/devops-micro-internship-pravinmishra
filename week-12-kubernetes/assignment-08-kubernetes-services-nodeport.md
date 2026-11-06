@@ -20,7 +20,7 @@ Create healthy, labeled NGINX Pods (readiness + liveness probes) for the NodePor
 
 #### Screenshot 1 — Healthy NGINX Pods before Service creation
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment8-ss1.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create `nginx-svc-nodeport` (type `NodePort`, port 80, `nodePort: 30080`) and in
 
 #### Screenshot 2 — Service output showing `80:30080` and populated endpoints
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment8-ss2.png)
 
 ---
 
@@ -48,7 +48,7 @@ Find a reachable node IP and test `<NODE_IP>:30080` externally (curl) and intern
 
 #### Screenshot 3 — Successful external or internal NodePort response
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment8-ss3.png)
 
 ---
 
@@ -62,7 +62,7 @@ Use the appropriate fallback for your cluster environment (`minikube service --u
 
 #### Screenshot 4 — Minikube helper URL or local validation result
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment8-ss4.png)
 
 ---
 
@@ -76,7 +76,7 @@ Change the selector to `app: does-not-match`, confirm endpoints empty and the re
 
 #### Screenshot 5 — Empty then restored endpoint output
 
-Add your screenshot here.
+
 
 ---
 
@@ -90,7 +90,7 @@ Delete one backend Pod while calling the NodePort from another terminal, confirm
 
 #### Screenshot 6 — Pod replacement while NodePort remains available
 
-Add your screenshot here.
+![screenshot_1](screenshots/assignment8-ss5.png)
 
 ---
 
@@ -111,13 +111,13 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Task 1: Probed NGINX Deployment applied (Screenshot 1)
-- [ ] Task 2: NodePort Service created on 30080 (Screenshot 2)
-- [ ] Task 3: NodePort tested externally/internally (Screenshot 3)
-- [ ] Task 4: Environment-specific access method used (Screenshot 4)
-- [ ] Task 5: Selector broken and fixed (Screenshot 5)
-- [ ] Task 6: Pod churn tested and Service continuity confirmed (Screenshot 6)
-- [ ] Reflection notes written (Notes)
+- [✅] Task 1: Probed NGINX Deployment applied (Screenshot 1)
+- [✅] Task 2: NodePort Service created on 30080 (Screenshot 2)
+- [✅] Task 3: NodePort tested externally/internally (Screenshot 3)
+- [✅] Task 4: Environment-specific access method used (Screenshot 4)
+- [✅] Task 5: Selector broken and fixed (Screenshot 5)
+- [✅] Task 6: Pod churn tested and Service continuity confirmed (Screenshot 6)
+- [✅] Reflection notes written (Notes)
 
 ---
 
