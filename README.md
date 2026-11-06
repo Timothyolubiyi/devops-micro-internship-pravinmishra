@@ -91,20 +91,20 @@ Week 06 → AWS Cloud
 Week 07 → Azure Cloud
 [![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/)
 
-<!-- Week 08 → Terraform -->
-<!-- [![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/) -->
+Week 08 → Terraform
+[![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/)
 
-<!-- Week 09 → Ansible -->
-<!-- [![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/) -->
+Week 09 → Ansible
+[![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/)
 
-<!-- Week 10 → Azure DevOps CI/CD -->
-<!-- [![Week 10 – CI/CD](./badges/week-10.svg)](./week-10-azure-devops/) -->
+Week 10 → Azure DevOps CI/CD
+[![Week 10 – CI/CD](./badges/week-10.svg)](./week-10-azure-devops/)
 
-<!-- Week 11 → Docker -->
-<!-- [![Week 11 – Docker](./badges/week-11.svg)](./week-11-docker/) -->
+Week 11 → Docker
+[![Week 11 – Docker](./badges/week-11.svg)](./week-11-docker/)
 
-<!-- Week 12 → Kubernetes -->
-<!-- [![Week 12 – K8s](./badges/week-12.svg)](./week-12-kubernetes/) -->
+Week 12 → Kubernetes
+[![Week 12 – K8s](./badges/week-12.svg)](./week-12-kubernetes/)
 
 <!-- Week 13 → Final Project / Capstone -->
 <!-- [![Week 13 – Capstone](./badges/week-13.svg)](./week-13-final-project/) -->
@@ -140,10 +140,10 @@ Week 07 → Azure Cloud
 | 07 | AWS Cloud | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/activity-7485032646671220736-MMpg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB6VGscB2AplIT7PcrwZvA0ECup4mNaUoIw | https://medium.com/@timothyolubiyi/refining-my-bash-scripting-skills-for-better-devops-automation-3c42a3c4de06?sharedUserId=timothyolubiyi|
 | 08 | Azure Cloud | ✅ Completed | ✅ Solved |  https://www.linkedin.com/posts/timothy-olubiyi-05b9ba123_pravinmishra-devops-cloudcomputing-share-7478792094447382528-yDzR/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB6VGscB2AplIT7PcrwZvA0ECup4mNaUoIw | https://medium.com/@timothyolubiyi/completed-an-ai-assisted-git-safety-pull-request-workflow-lab-ccfd4d6aac66 |
 | 09 | Terraform | ✅ Completed | ✅ Solved | — | — |
-| 10 | Ansible | ✅ Completed | ✅ Solved | — | — |
-| 11 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
-| 12 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
-| 13 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
+| 10 | Ansible | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/share-7481852621096468481-FU1i/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB6VGscB2AplIT7PcrwZvA0ECup4mNaUoIw| — |
+| 11 | Azure DevOps (CI/CD) | ✅ Solved | https://www.linkedin.com/posts/share-7481852621096468481-FU1i/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB6VGscB2AplIT7PcrwZvA0ECup4mNaUoIw | — | — |
+| 12 | Docker | ✅ Completed | ✅ Solved | https://medium.com/@timothyolubiyi/completed-an-ai-assisted-git-safety-pull-request-workflow-lab-ccfd4d6aac66 | — |
+| 13 | Kubernetes | ✅ Completed | ⏳ Pending | https://www.linkedin.com/posts/share-7481852621096468481-FU1i/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB6VGscB2AplIT7PcrwZvA0ECup4mNaUoIw | — |
 | 14 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
 
 
@@ -165,12 +165,6 @@ Week 07 → Azure Cloud
 If you found this repo useful or want to follow my DevOps journey:
 
 - ⭐ Star this repo
-<<<<<<< HEAD
 - 🔗 Connect with me on [LinkedIn](https://www.linkedin.com/in/timothy-olubiyi-05b9ba123)
 - 🌐 Learn more about the program: https://dmi.pravinmishra.com
 - 💬 Join the community: https://discord.pravinmishra.com
-=======
-- 🔗 Connect with me on [LinkedIn](#)
-- 🌐 Learn more about the program: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
-- 💬 Join the community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
->>>>>>> upstream/main
